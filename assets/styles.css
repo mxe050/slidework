@@ -260,6 +260,7 @@ p {
   border: 1px solid var(--line);
   border-radius: 8px;
   box-shadow: var(--shadow);
+  overflow-x: auto;
 }
 
 .figure-panel.compact {
@@ -273,12 +274,18 @@ figcaption {
 }
 
 .route-grid,
+.concept-grid,
 .lesson-grid,
 .etd-grid,
 .quiz {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
+}
+
+.concept-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-bottom: 20px;
 }
 
 .lesson-grid,
@@ -288,6 +295,7 @@ figcaption {
 }
 
 .info-card,
+.concept-card,
 .lesson,
 .etd-grid article,
 .quiz-item,
@@ -299,12 +307,51 @@ figcaption {
   border-radius: 8px;
 }
 
+.concept-card {
+  border-top: 5px solid var(--teal);
+}
+
+.concept-card.strong-card {
+  border-top-color: var(--coral);
+  background: #fffafa;
+}
+
 .info-card p,
+.concept-card p,
 .lesson p,
 .etd-grid p,
 .timeline p,
 .muted {
   color: var(--muted);
+}
+
+.narrow-head {
+  margin-top: 28px;
+}
+
+.reading-steps,
+.example-panel {
+  margin: 20px 0;
+  padding: 22px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.reading-steps ol {
+  margin: 0;
+  padding-left: 1.45rem;
+}
+
+.reading-steps li + li {
+  margin-top: 8px;
+}
+
+.evidence-table td:first-child,
+.evidence-table th:first-child {
+  width: 18%;
+  font-weight: 800;
 }
 
 .timeline {
@@ -503,6 +550,23 @@ input[type="radio"] {
   text-align: left;
 }
 
+@media (max-width: 700px) {
+  .mini-table {
+    display: block;
+    overflow-x: auto;
+    white-space: normal;
+  }
+
+  .figure-panel img[src$=".svg"] {
+    width: 680px;
+    max-width: none;
+  }
+
+  .figure-panel.compact img[src$=".svg"] {
+    width: 560px;
+  }
+}
+
 .vote-form fieldset {
   margin: 0 0 18px;
   padding: 0;
@@ -627,6 +691,7 @@ textarea {
   .two-col,
   .practice-layout,
   .route-grid,
+  .concept-grid,
   .lesson-grid,
   .etd-grid,
   .timeline,
@@ -690,13 +755,16 @@ textarea {
   .hero-tool,
   .figure-panel,
   .info-card,
+  .concept-card,
   .lesson,
   .etd-grid article,
   .timeline-item,
   .quiz-item,
   .case-box,
   .vote-form,
-  .check-panel {
+  .check-panel,
+  .reading-steps,
+  .example-panel {
     max-width: calc(100vw - 24px);
   }
 

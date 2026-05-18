@@ -35,7 +35,7 @@
       }
 
       if (reason.length < 12) {
-        feedback.textContent = "理由をもう少し具体化しましょう。利益、害、負担、価値観、確実性のうち少なくとも1つを入れると投票理由になります。";
+        feedback.textContent = "理由をもう少し具体化しましょう。絶対効果、信頼区間、MIDまたは閾値、害、負担、価値観、確実性のうち少なくとも1つを入れると投票理由になります。";
         return;
       }
 
@@ -56,7 +56,7 @@
         const correct = button.dataset.correct === "true";
         answer.textContent = correct
           ? "正解です。この視点を投票理由に使えます。"
-          : "ここは再確認しましょう。SoFは効果と確実性、EtDは価値判断、投票は推奨の方向と強さを確認します。";
+          : "ここは再確認しましょう。SoFは対照群との差、絶対効果、信頼区間、確実性を読み、EtDで価値判断に結びつけます。";
         answer.style.color = correct ? "var(--green)" : "var(--coral)";
       });
     });

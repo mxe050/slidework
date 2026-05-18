@@ -22,7 +22,7 @@
   </defs>
   <rect class="bg" width="1100" height="660"/>
   <text class="title" x="50" y="58">EtDは「判断の理由」を見える化する表</text>
-  <text class="t" x="50" y="88">患者代表は、価値観・負担・公平性を、効果と確実性に結びつける</text>
+  <text class="t" x="50" y="88">パネリストは、価値観・負担・公平性を、効果と確実性に結びつける</text>
 
   <g transform="translate(420,250)">
     <rect class="center" x="0" y="0" width="260" height="132" rx="8"/>
@@ -62,7 +62,7 @@
 
   <g transform="translate(70,344)">
     <rect class="patient" x="0" y="0" width="240" height="126" rx="8"/>
-    <text class="small" x="18" y="28" fill="#9c342b">患者代表の重点</text>
+    <text class="small" x="18" y="28" fill="#9c342b">重点確認</text>
     <text class="h" x="18" y="58">価値観と意向</text>
     <text class="t" x="18" y="86">多くの患者が同じ選択を</text>
     <text class="t" x="18" y="108">望むか、分かれるか</text>
