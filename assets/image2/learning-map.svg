@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-labelledby="title desc">
-  <title id="title">CQから投票までの学習地図</title>
-  <desc id="desc">CQ、SR、SoF、EtD、推奨草案、投票までの流れと、パネリストの確認点を示す図。</desc>
+  <title id="title">問いから投票までの学習地図</title>
+  <desc id="desc">問いの整理、研究のまとめ、結果の要約、判断表、推奨草案、投票までの流れと、パネリストの確認点を示す図。</desc>
   <defs>
     <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
       <path d="M2,2 L10,6 L2,10 Z" fill="#415066"/>
@@ -20,12 +20,12 @@
   </defs>
   <rect class="bg" x="0" y="0" width="1100" height="620" rx="0"/>
   <text class="title" x="54" y="58">パネリストが投票までに読む流れ</text>
-  <text class="t" x="54" y="88">SRの数字を、EtDの判断と推奨文の賛否に結びつける</text>
+  <text class="t" x="54" y="88">研究の数字を、判断表と推奨文の賛否に結びつける</text>
 
   <g transform="translate(54,130)">
     <rect class="flow" x="0" y="0" width="145" height="120" rx="8"/>
     <circle cx="26" cy="28" r="16" fill="#0f766e"/><text class="num" x="21" y="34">1</text>
-    <text class="h" x="20" y="62">CQ/PICO</text>
+    <text class="h" x="20" y="62">問い</text>
     <text class="t" x="20" y="88">誰に、何を、</text>
     <text class="t" x="20" y="110">何と比べるか</text>
   </g>
@@ -33,7 +33,7 @@
   <g transform="translate(282,130)">
     <rect class="flow" x="0" y="0" width="145" height="120" rx="8"/>
     <circle cx="26" cy="28" r="16" fill="#0f766e"/><text class="num" x="21" y="34">2</text>
-    <text class="h" x="20" y="62">SR</text>
+    <text class="h" x="20" y="62">研究</text>
     <text class="t" x="20" y="88">研究を集めて</text>
     <text class="t" x="20" y="110">統合する</text>
   </g>
@@ -41,7 +41,7 @@
   <g transform="translate(510,130)">
     <rect class="flow" x="0" y="0" width="145" height="120" rx="8"/>
     <circle cx="26" cy="28" r="16" fill="#0f766e"/><text class="num" x="21" y="34">3</text>
-    <text class="h" x="20" y="62">SoF</text>
+    <text class="h" x="20" y="62">要約表</text>
     <text class="t" x="20" y="88">効果の大きさと</text>
     <text class="t" x="20" y="110">確実性を読む</text>
   </g>
@@ -49,7 +49,7 @@
   <g transform="translate(738,130)">
     <rect class="flow" x="0" y="0" width="145" height="120" rx="8"/>
     <circle cx="26" cy="28" r="16" fill="#0f766e"/><text class="num" x="21" y="34">4</text>
-    <text class="h" x="20" y="62">EtD</text>
+    <text class="h" x="20" y="62">判断表</text>
     <text class="t" x="20" y="88">価値観・負担・</text>
     <text class="t" x="20" y="110">公平性を加える</text>
   </g>
@@ -66,7 +66,7 @@
   <text class="h" x="84" y="352">パネリストが各段階で確認すること</text>
   <g transform="translate(84,382)">
     <rect class="role" x="0" y="0" width="170" height="100" rx="8"/>
-    <text class="s" x="18" y="30">CQ/PICO</text>
+    <text class="s" x="18" y="30">問い</text>
     <text class="t" x="18" y="58">患者像が実際の</text>
     <text class="t" x="18" y="80">患者に合うか</text>
   </g>
@@ -78,13 +78,13 @@
   </g>
   <g transform="translate(468,382)">
     <rect class="role" x="0" y="0" width="170" height="100" rx="8"/>
-    <text class="s" x="18" y="30">SoF</text>
+    <text class="s" x="18" y="30">要約表</text>
     <text class="t" x="18" y="58">何人に利益・害が</text>
     <text class="t" x="18" y="80">起きそうか</text>
   </g>
   <g transform="translate(660,382)">
     <rect class="role" x="0" y="0" width="170" height="100" rx="8"/>
-    <text class="s" x="18" y="30">EtD</text>
+    <text class="s" x="18" y="30">判断表</text>
     <text class="t" x="18" y="58">負担・価値観・</text>
     <text class="t" x="18" y="80">公平性を確認</text>
   </g>

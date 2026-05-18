@@ -35,30 +35,18 @@
       }
 
       if (reason.length < 12) {
-        feedback.textContent = "理由をもう少し具体化しましょう。絶対効果、信頼区間、MIDまたは閾値、害、負担、価値観、確実性のうち少なくとも1つを入れると投票理由になります。";
+        feedback.textContent = "理由をもう少し具体化しましょう。人数差、結果の幅、大事な差の目安、害、負担、価値観、確実性のうち少なくとも1つを入れると投票理由になります。";
         return;
       }
 
       const messages = {
         agree: "よい整理です。同意する場合も、条件付き推奨である理由と、患者が選ばない場合もある点を会議記録に残すと実用的です。",
         revise: "最も実践的な投票です。修正提案では、対象者、条件、注記、患者向け説明のどこを直すかまで示すと合意形成が進みます。",
-        oppose: "反対票も重要な貢献です。EtDのどの判断に同意できないのか、または推奨なし・別方向の推奨が妥当な理由を明確にしましょう。"
+        oppose: "反対票も重要な貢献です。判断表のどの判断に同意できないのか、または推奨なし・別方向の推奨が妥当な理由を明確にしましょう。"
       };
 
       feedback.textContent = messages[vote];
     });
   }
 
-  document.querySelectorAll("[data-quiz] .quiz-item").forEach((item) => {
-    const answer = item.querySelector(".answer");
-    item.querySelectorAll("button").forEach((button) => {
-      button.addEventListener("click", () => {
-        const correct = button.dataset.correct === "true";
-        answer.textContent = correct
-          ? "正解です。この視点を投票理由に使えます。"
-          : "ここは再確認しましょう。SoFは対照群との差、絶対効果、信頼区間、確実性を読み、EtDで価値判断に結びつけます。";
-        answer.style.color = correct ? "var(--green)" : "var(--coral)";
-      });
-    });
-  });
 })();
