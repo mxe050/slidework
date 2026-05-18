@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-labelledby="title desc">
   <title id="title">CQから投票までの学習地図</title>
-  <desc id="desc">CQ、SR、SoF、EtD、推奨草案、投票までの流れと、患者代表の役割を示す図。</desc>
+  <desc id="desc">CQ、SR、SoF、EtD、推奨草案、投票までの流れと、パネリストの確認点を示す図。</desc>
   <defs>
     <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
       <path d="M2,2 L10,6 L2,10 Z" fill="#415066"/>
@@ -19,7 +19,7 @@
     </style>
   </defs>
   <rect class="bg" x="0" y="0" width="1100" height="620" rx="0"/>
-  <text class="title" x="54" y="58">患者代表が投票までに読む流れ</text>
+  <text class="title" x="54" y="58">パネリストが投票までに読む流れ</text>
   <text class="t" x="54" y="88">SRの数字を、EtDの判断と推奨文の賛否に結びつける</text>
 
   <g transform="translate(54,130)">
@@ -58,12 +58,12 @@
     <rect class="flow" x="0" y="0" width="110" height="120" rx="8"/>
     <circle cx="26" cy="28" r="16" fill="#0f766e"/><text class="num" x="21" y="34">5</text>
     <text class="h" x="18" y="62">投票</text>
-    <text class="t" x="18" y="88">方向と強さに</text>
-    <text class="t" x="18" y="110">賛否を示す</text>
+    <text class="t" x="18" y="88">方向・強さを</text>
+    <text class="t" x="18" y="110">確認する</text>
   </g>
 
   <rect class="card" x="54" y="310" width="992" height="230" rx="8"/>
-  <text class="h" x="84" y="352">患者代表が各段階で担うこと</text>
+  <text class="h" x="84" y="352">パネリストが各段階で確認すること</text>
   <g transform="translate(84,382)">
     <rect class="role" x="0" y="0" width="170" height="100" rx="8"/>
     <text class="s" x="18" y="30">CQ/PICO</text>
@@ -94,5 +94,5 @@
     <text class="t" x="18" y="58">賛否と修正案を</text>
     <text class="t" x="18" y="80">理由つきで示す</text>
   </g>
-  <text class="t" x="84" y="520">合言葉：個人の体験を、患者全体の価値観・負担・選択のばらつきとして言語化する</text>
+  <text class="t" x="84" y="520">合言葉：エビデンスを、患者全体の価値観・負担・選択のばらつきとして言語化する</text>
 </svg>

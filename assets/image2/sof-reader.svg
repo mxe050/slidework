@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="640" viewBox="0 0 1100 640" role="img" aria-labelledby="title desc">
   <title id="title">Summary of Findings表の読み方</title>
-  <desc id="desc">SoF表の列、絶対効果、確実性、脚注、患者向け要約を確認する図。</desc>
+  <desc id="desc">SoF表の列、対照群との差、絶対効果、確実性、脚注、平易な要約を確認する図。</desc>
   <defs>
     <style>
       .bg{fill:#fff}
@@ -19,14 +19,14 @@
     </style>
   </defs>
   <rect class="bg" width="1100" height="640"/>
-  <text class="title" x="48" y="54">SoF表は「何人に何が起きるか」を読む表</text>
-  <text class="t" x="48" y="84">相対効果だけでなく、絶対効果・信頼区間・確実性・脚注をまとめて見る</text>
+  <text class="title" x="48" y="54">SoF表は「比較して何人変わるか」を読む表</text>
+  <text class="t" x="48" y="84">相対効果だけでなく、対照群との差・信頼区間・確実性・脚注をまとめて見る</text>
 
   <g transform="translate(48,122)">
     <rect class="head" x="0" y="0" width="1004" height="54" rx="8"/>
     <text class="h" x="22" y="34">アウトカム</text>
     <text class="h" x="198" y="34">比較群のリスク</text>
-    <text class="h" x="398" y="34">介入による絶対効果</text>
+    <text class="h" x="398" y="34">対照群との差</text>
     <text class="h" x="642" y="34">確実性</text>
     <text class="h" x="790" y="34">平易な要約</text>
     <rect class="row1" x="0" y="54" width="1004" height="84"/>
@@ -68,7 +68,7 @@
     <rect class="call" x="0" y="0" width="300" height="112" rx="8"/>
     <text class="b" x="18" y="32">1. 絶対効果</text>
     <text class="t" x="18" y="60">1000人あたり何人の差か。</text>
-    <text class="t" x="18" y="84">患者に説明できる形にする。</text>
+    <text class="t" x="18" y="84">成功人数ではなく比較差。</text>
   </g>
   <g transform="translate(400,470)">
     <rect class="tag" x="0" y="0" width="300" height="112" rx="8"/>
