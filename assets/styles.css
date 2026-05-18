@@ -276,8 +276,7 @@ figcaption {
 .route-grid,
 .concept-grid,
 .lesson-grid,
-.etd-grid,
-.quiz {
+.etd-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
@@ -289,8 +288,7 @@ figcaption {
 }
 
 .lesson-grid,
-.etd-grid,
-.quiz {
+.etd-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
@@ -298,7 +296,6 @@ figcaption {
 .concept-card,
 .lesson,
 .etd-grid article,
-.quiz-item,
 .timeline-item {
   min-width: 0;
   padding: 20px;
@@ -630,32 +627,6 @@ textarea {
   border-left: 5px solid var(--coral);
 }
 
-.quiz-item button {
-  display: block;
-  width: 100%;
-  margin-top: 10px;
-  padding: 10px 12px;
-  color: var(--ink);
-  background: #fff;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  font: inherit;
-  text-align: left;
-  cursor: pointer;
-}
-
-.quiz-item button:hover,
-.quiz-item button:focus-visible {
-  border-color: var(--teal);
-  background: #f0faf8;
-}
-
-.quiz-item .answer {
-  min-height: 32px;
-  margin-top: 12px;
-  font-weight: 800;
-}
-
 .sources {
   padding-bottom: 90px;
 }
@@ -695,7 +666,6 @@ textarea {
   .lesson-grid,
   .etd-grid,
   .timeline,
-  .quiz,
   .checklist {
     grid-template-columns: 1fr;
   }
@@ -759,7 +729,6 @@ textarea {
   .lesson,
   .etd-grid article,
   .timeline-item,
-  .quiz-item,
   .case-box,
   .vote-form,
   .check-panel,

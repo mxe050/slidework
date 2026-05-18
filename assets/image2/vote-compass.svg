@@ -17,7 +17,7 @@
   </defs>
   <rect class="bg" width="780" height="620"/>
   <text class="title" x="42" y="50">投票で考える4つの置き場所</text>
-  <text class="t" x="42" y="80">推奨文がEtDの判断に合っているか、方向と強さを分けて確認する</text>
+  <text class="t" x="42" y="80">推奨文が判断表の理由に合っているか、方向と強さを分けて確認する</text>
 
   <line class="axis" x1="390" y1="130" x2="390" y2="520"/>
   <line class="axis" x1="110" y1="325" x2="670" y2="325"/>

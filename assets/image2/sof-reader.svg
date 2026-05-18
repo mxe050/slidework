@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="640" viewBox="0 0 1100 640" role="img" aria-labelledby="title desc">
   <title id="title">Summary of Findings表の読み方</title>
-  <desc id="desc">SoF表の列、対照群との差、絶対効果、確実性、脚注、平易な要約を確認する図。</desc>
+  <desc id="desc">結果の要約表の列、対照群との差、人数差、確実性、脚注、平易な要約を確認する図。</desc>
   <defs>
     <style>
       .bg{fill:#fff}
@@ -19,8 +19,8 @@
     </style>
   </defs>
   <rect class="bg" width="1100" height="640"/>
-  <text class="title" x="48" y="54">SoF表は「比較して何人変わるか」を読む表</text>
-  <text class="t" x="48" y="84">相対効果だけでなく、対照群との差・信頼区間・確実性・脚注をまとめて見る</text>
+  <text class="title" x="48" y="54">結果の要約表は「比較して何人変わるか」を読む表</text>
+  <text class="t" x="48" y="84">割合だけでなく、対照群との差・結果の幅・確実性・脚注をまとめて見る</text>
 
   <g transform="translate(48,122)">
     <rect class="head" x="0" y="0" width="1004" height="54" rx="8"/>
@@ -54,10 +54,10 @@
     <text class="t" x="790" y="171">害は増えるかも</text>
     <text class="t" x="790" y="194">しれない</text>
 
-    <text class="b" x="22" y="262">QOL</text>
+    <text class="b" x="22" y="262">生活の質</text>
     <text class="t" x="198" y="260">尺度 0-100</text>
     <text class="strong" x="398" y="254">平均 4点改善</text>
-    <text class="small" x="398" y="279">MID 5点なら小さい可能性</text>
+    <text class="small" x="398" y="279">目安が5点なら小さい可能性</text>
     <text class="strong" x="642" y="260">低</text>
     <text class="small" x="642" y="282">非直接性あり</text>
     <text class="t" x="790" y="255">重要な改善かは</text>
@@ -66,7 +66,7 @@
 
   <g transform="translate(70,470)">
     <rect class="call" x="0" y="0" width="300" height="112" rx="8"/>
-    <text class="b" x="18" y="32">1. 絶対効果</text>
+    <text class="b" x="18" y="32">1. 人数差</text>
     <text class="t" x="18" y="60">1000人あたり何人の差か。</text>
     <text class="t" x="18" y="84">成功人数ではなく比較差。</text>
   </g>

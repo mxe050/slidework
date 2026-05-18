@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="660" viewBox="0 0 1100 660" role="img" aria-labelledby="title desc">
-  <title id="title">EtDの読み方</title>
-  <desc id="desc">EtDの判断項目と、推奨の方向・強さに集約する流れを示す図。</desc>
+  <title id="title">判断表の読み方</title>
+  <desc id="desc">判断表の判断項目と、推奨の方向・強さに集約する流れを示す図。</desc>
   <defs>
     <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
       <path d="M2,2 L10,6 L2,10 Z" fill="#415066"/>
@@ -21,7 +21,7 @@
     </style>
   </defs>
   <rect class="bg" width="1100" height="660"/>
-  <text class="title" x="50" y="58">EtDは「判断の理由」を見える化する表</text>
+  <text class="title" x="50" y="58">判断表は「判断の理由」を見える化する表</text>
   <text class="t" x="50" y="88">パネリストは、価値観・負担・公平性を、効果と確実性に結びつける</text>
 
   <g transform="translate(420,250)">
