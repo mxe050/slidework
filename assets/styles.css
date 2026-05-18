@@ -289,6 +289,10 @@ figcaption {
   gap: 16px;
 }
 
+.route-grid.four-step {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .concept-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   margin-bottom: 20px;
@@ -303,7 +307,8 @@ figcaption {
 .concept-card,
 .lesson,
 .etd-grid article,
-.timeline-item {
+.timeline-item,
+.post-flow article {
   min-width: 0;
   padding: 20px;
   background: #fff;
@@ -395,6 +400,41 @@ figcaption {
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+.meeting-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+  gap: 22px;
+  align-items: start;
+}
+
+.meeting-photo {
+  margin: 0;
+  padding: 14px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.meeting-photo img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.meeting-points {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.post-flow {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
 }
 
 .mentor-callout,
@@ -809,12 +849,15 @@ textarea {
   .hero,
   .two-col,
   .video-layout,
+  .meeting-layout,
   .advanced-learning,
   .practice-layout,
   .route-grid,
   .concept-grid,
   .lesson-grid,
   .etd-grid,
+  .meeting-points,
+  .post-flow,
   .timeline,
   .checklist {
     grid-template-columns: 1fr;
@@ -876,10 +919,12 @@ textarea {
   .mentor-callout,
   .mentor-note,
   .figure-panel,
+  .meeting-photo,
   .info-card,
   .concept-card,
   .lesson,
   .etd-grid article,
+  .post-flow article,
   .timeline-item,
   .case-box,
   .vote-form,
