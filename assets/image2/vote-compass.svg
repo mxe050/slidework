@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="620" viewBox="0 0 780 620" role="img" aria-labelledby="title desc">
+  <title id="title">推奨の方向と強さ</title>
+  <desc id="desc">推奨する、推奨しない、強い、条件付きの4分類を示す図。</desc>
+  <defs>
+    <style>
+      .bg{fill:#fff}
+      .axis{stroke:#415066;stroke-width:3}
+      .q1{fill:#e9f6f4;stroke:#0f766e;stroke-width:2}
+      .q2{fill:#eef4ff;stroke:#315fbc;stroke-width:2}
+      .q3{fill:#fff0ed;stroke:#c94a3b;stroke-width:2}
+      .q4{fill:#fff7e6;stroke:#b47705;stroke-width:2}
+      .title{font:700 26px 'Yu Gothic','Meiryo',sans-serif;fill:#1e2530}
+      .h{font:700 20px 'Yu Gothic','Meiryo',sans-serif;fill:#1e2530}
+      .t{font:500 15px 'Yu Gothic','Meiryo',sans-serif;fill:#4f5d6c}
+      .axisText{font:700 16px 'Yu Gothic','Meiryo',sans-serif;fill:#26313f}
+    </style>
+  </defs>
+  <rect class="bg" width="780" height="620"/>
+  <text class="title" x="42" y="50">投票で考える4つの置き場所</text>
+  <text class="t" x="42" y="80">推奨文がEtDの判断に合っているか、方向と強さを分けて確認する</text>
+
+  <line class="axis" x1="390" y1="130" x2="390" y2="520"/>
+  <line class="axis" x1="110" y1="325" x2="670" y2="325"/>
+  <text class="axisText" x="312" y="116">強い</text>
+  <text class="axisText" x="308" y="552">条件付き</text>
+  <text class="axisText" x="92" y="312">行わない</text>
+  <text class="axisText" x="632" y="312">行う</text>
+
+  <rect class="q2" x="118" y="140" width="246" height="160" rx="8"/>
+  <text class="h" x="142" y="178">強く推奨しない</text>
+  <text class="t" x="142" y="212">害が明らかに上回る、</text>
+  <text class="t" x="142" y="238">または避けるべき理由が強い。</text>
+  <text class="t" x="142" y="270">ほぼ全員が行わない選択。</text>
+
+  <rect class="q1" x="416" y="140" width="246" height="160" rx="8"/>
+  <text class="h" x="440" y="178">強く推奨する</text>
+  <text class="t" x="440" y="212">利益が明らかに上回る。</text>
+  <text class="t" x="440" y="238">ほぼ全員が選ぶと考えられる。</text>
+  <text class="t" x="440" y="270">低確実性なら例外理由が必要。</text>
+
+  <rect class="q3" x="118" y="350" width="246" height="160" rx="8"/>
+  <text class="h" x="142" y="388">条件付きで推奨しない</text>
+  <text class="t" x="142" y="422">多くは避けるが、</text>
+  <text class="t" x="142" y="448">状況により選ぶ人もいる。</text>
+  <text class="t" x="142" y="480">価値観の確認が必要。</text>
+
+  <rect class="q4" x="416" y="350" width="246" height="160" rx="8"/>
+  <text class="h" x="440" y="388">条件付きで推奨する</text>
+  <text class="t" x="440" y="422">多くは選ぶが、</text>
+  <text class="t" x="440" y="448">選ばない人も少なくない。</text>
+  <text class="t" x="440" y="480">共有意思決定が重要。</text>
+
+  <text class="axisText" x="178" y="588">方向：利益と害のバランス</text>
+  <text class="axisText" x="430" y="588">強さ：確実性と価値観のばらつき</text>
+</svg>

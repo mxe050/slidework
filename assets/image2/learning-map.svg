@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-labelledby="title desc">
+  <title id="title">CQから投票までの学習地図</title>
+  <desc id="desc">CQ、SR、SoF、EtD、推奨草案、投票までの流れと、患者代表の役割を示す図。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#415066"/>
+    </marker>
+    <style>
+      .bg{fill:#f5f8fb}
+      .card{fill:#fff;stroke:#d7e0e8;stroke-width:2}
+      .flow{fill:#e9f6f4;stroke:#0f766e;stroke-width:2}
+      .role{fill:#fff7e6;stroke:#b47705;stroke-width:2}
+      .title{font:700 28px 'Yu Gothic','Meiryo',sans-serif;fill:#1e2530}
+      .h{font:700 21px 'Yu Gothic','Meiryo',sans-serif;fill:#1e2530}
+      .t{font:500 16px 'Yu Gothic','Meiryo',sans-serif;fill:#4f5d6c}
+      .s{font:700 14px 'Yu Gothic','Meiryo',sans-serif;fill:#0b5852}
+      .num{font:800 18px Arial,sans-serif;fill:#fff}
+      .line{stroke:#415066;stroke-width:3;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1100" height="620" rx="0"/>
+  <text class="title" x="54" y="58">患者代表が投票までに読む流れ</text>
+  <text class="t" x="54" y="88">SRの数字を、EtDの判断と推奨文の賛否に結びつける</text>
+
+  <g transform="translate(54,130)">
+    <rect class="flow" x="0" y="0" width="145" height="120" rx="8"/>
+    <circle cx="26" cy="28" r="16" fill="#0f766e"/><text class="num" x="21" y="34">1</text>
+    <text class="h" x="20" y="62">CQ/PICO</text>
+    <text class="t" x="20" y="88">誰に、何を、</text>
+    <text class="t" x="20" y="110">何と比べるか</text>
+  </g>
+  <path class="line" d="M205 190 H270"/>
+  <g transform="translate(282,130)">
+    <rect class="flow" x="0" y="0" width="145" height="120" rx="8"/>
+    <circle cx="26" cy="28" r="16" fill="#0f766e"/><text class="num" x="21" y="34">2</text>
+    <text class="h" x="20" y="62">SR</text>
+    <text class="t" x="20" y="88">研究を集めて</text>
+    <text class="t" x="20" y="110">統合する</text>
+  </g>
+  <path class="line" d="M433 190 H498"/>
+  <g transform="translate(510,130)">
+    <rect class="flow" x="0" y="0" width="145" height="120" rx="8"/>
+    <circle cx="26" cy="28" r="16" fill="#0f766e"/><text class="num" x="21" y="34">3</text>
+    <text class="h" x="20" y="62">SoF</text>
+    <text class="t" x="20" y="88">効果の大きさと</text>
+    <text class="t" x="20" y="110">確実性を読む</text>
+  </g>
+  <path class="line" d="M661 190 H726"/>
+  <g transform="translate(738,130)">
+    <rect class="flow" x="0" y="0" width="145" height="120" rx="8"/>
+    <circle cx="26" cy="28" r="16" fill="#0f766e"/><text class="num" x="21" y="34">4</text>
+    <text class="h" x="20" y="62">EtD</text>
+    <text class="t" x="20" y="88">価値観・負担・</text>
+    <text class="t" x="20" y="110">公平性を加える</text>
+  </g>
+  <path class="line" d="M889 190 H954"/>
+  <g transform="translate(966,130)">
+    <rect class="flow" x="0" y="0" width="110" height="120" rx="8"/>
+    <circle cx="26" cy="28" r="16" fill="#0f766e"/><text class="num" x="21" y="34">5</text>
+    <text class="h" x="18" y="62">投票</text>
+    <text class="t" x="18" y="88">方向と強さに</text>
+    <text class="t" x="18" y="110">賛否を示す</text>
+  </g>
+
+  <rect class="card" x="54" y="310" width="992" height="230" rx="8"/>
+  <text class="h" x="84" y="352">患者代表が各段階で担うこと</text>
+  <g transform="translate(84,382)">
+    <rect class="role" x="0" y="0" width="170" height="100" rx="8"/>
+    <text class="s" x="18" y="30">CQ/PICO</text>
+    <text class="t" x="18" y="58">患者像が実際の</text>
+    <text class="t" x="18" y="80">患者に合うか</text>
+  </g>
+  <g transform="translate(276,382)">
+    <rect class="role" x="0" y="0" width="170" height="100" rx="8"/>
+    <text class="s" x="18" y="30">アウトカム</text>
+    <text class="t" x="18" y="58">本当に大切な結果が</text>
+    <text class="t" x="18" y="80">入っているか</text>
+  </g>
+  <g transform="translate(468,382)">
+    <rect class="role" x="0" y="0" width="170" height="100" rx="8"/>
+    <text class="s" x="18" y="30">SoF</text>
+    <text class="t" x="18" y="58">何人に利益・害が</text>
+    <text class="t" x="18" y="80">起きそうか</text>
+  </g>
+  <g transform="translate(660,382)">
+    <rect class="role" x="0" y="0" width="170" height="100" rx="8"/>
+    <text class="s" x="18" y="30">EtD</text>
+    <text class="t" x="18" y="58">負担・価値観・</text>
+    <text class="t" x="18" y="80">公平性を確認</text>
+  </g>
+  <g transform="translate(852,382)">
+    <rect class="role" x="0" y="0" width="164" height="100" rx="8"/>
+    <text class="s" x="18" y="30">投票</text>
+    <text class="t" x="18" y="58">賛否と修正案を</text>
+    <text class="t" x="18" y="80">理由つきで示す</text>
+  </g>
+  <text class="t" x="84" y="520">合言葉：個人の体験を、患者全体の価値観・負担・選択のばらつきとして言語化する</text>
+</svg>

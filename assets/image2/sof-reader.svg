@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="640" viewBox="0 0 1100 640" role="img" aria-labelledby="title desc">
+  <title id="title">Summary of Findings表の読み方</title>
+  <desc id="desc">SoF表の列、絶対効果、確実性、脚注、患者向け要約を確認する図。</desc>
+  <defs>
+    <style>
+      .bg{fill:#fff}
+      .head{fill:#315fbc}
+      .row1{fill:#f5f8fb}
+      .row2{fill:#fff}
+      .line{stroke:#d7e0e8;stroke-width:2}
+      .call{fill:#fff7e6;stroke:#b47705;stroke-width:2}
+      .tag{fill:#e9f6f4;stroke:#0f766e;stroke-width:2}
+      .title{font:700 28px 'Yu Gothic','Meiryo',sans-serif;fill:#1e2530}
+      .h{font:700 18px 'Yu Gothic','Meiryo',sans-serif;fill:#fff}
+      .b{font:700 18px 'Yu Gothic','Meiryo',sans-serif;fill:#1e2530}
+      .t{font:500 15px 'Yu Gothic','Meiryo',sans-serif;fill:#4f5d6c}
+      .small{font:500 13px 'Yu Gothic','Meiryo',sans-serif;fill:#4f5d6c}
+      .strong{font:800 16px 'Yu Gothic','Meiryo',sans-serif;fill:#0b5852}
+    </style>
+  </defs>
+  <rect class="bg" width="1100" height="640"/>
+  <text class="title" x="48" y="54">SoF表は「何人に何が起きるか」を読む表</text>
+  <text class="t" x="48" y="84">相対効果だけでなく、絶対効果・信頼区間・確実性・脚注をまとめて見る</text>
+
+  <g transform="translate(48,122)">
+    <rect class="head" x="0" y="0" width="1004" height="54" rx="8"/>
+    <text class="h" x="22" y="34">アウトカム</text>
+    <text class="h" x="198" y="34">比較群のリスク</text>
+    <text class="h" x="398" y="34">介入による絶対効果</text>
+    <text class="h" x="642" y="34">確実性</text>
+    <text class="h" x="790" y="34">平易な要約</text>
+    <rect class="row1" x="0" y="54" width="1004" height="84"/>
+    <rect class="row2" x="0" y="138" width="1004" height="84"/>
+    <rect class="row1" x="0" y="222" width="1004" height="84"/>
+    <line class="line" x1="176" y1="0" x2="176" y2="306"/>
+    <line class="line" x1="376" y1="0" x2="376" y2="306"/>
+    <line class="line" x1="620" y1="0" x2="620" y2="306"/>
+    <line class="line" x1="770" y1="0" x2="770" y2="306"/>
+    <text class="b" x="22" y="94">死亡</text>
+    <text class="t" x="198" y="92">1000人中 80人</text>
+    <text class="strong" x="398" y="86">20人少ない</text>
+    <text class="small" x="398" y="111">95%CI: 2人少ないから35人少ない</text>
+    <text class="strong" x="642" y="92">中</text>
+    <text class="small" x="642" y="114">不精確性で1段階低下</text>
+    <text class="t" x="790" y="87">死亡をおそらく</text>
+    <text class="t" x="790" y="110">減らす</text>
+
+    <text class="b" x="22" y="178">重い有害事象</text>
+    <text class="t" x="198" y="176">1000人中 30人</text>
+    <text class="strong" x="398" y="170">8人多い可能性</text>
+    <text class="small" x="398" y="195">95%CI: 5人少ないから24人多い</text>
+    <text class="strong" x="642" y="176">低</text>
+    <text class="small" x="642" y="198">非一貫性・不精確性</text>
+    <text class="t" x="790" y="171">害は増えるかも</text>
+    <text class="t" x="790" y="194">しれない</text>
+
+    <text class="b" x="22" y="262">QOL</text>
+    <text class="t" x="198" y="260">尺度 0-100</text>
+    <text class="strong" x="398" y="254">平均 4点改善</text>
+    <text class="small" x="398" y="279">MID 5点なら小さい可能性</text>
+    <text class="strong" x="642" y="260">低</text>
+    <text class="small" x="642" y="282">非直接性あり</text>
+    <text class="t" x="790" y="255">重要な改善かは</text>
+    <text class="t" x="790" y="278">判断が必要</text>
+  </g>
+
+  <g transform="translate(70,470)">
+    <rect class="call" x="0" y="0" width="300" height="112" rx="8"/>
+    <text class="b" x="18" y="32">1. 絶対効果</text>
+    <text class="t" x="18" y="60">1000人あたり何人の差か。</text>
+    <text class="t" x="18" y="84">患者に説明できる形にする。</text>
+  </g>
+  <g transform="translate(400,470)">
+    <rect class="tag" x="0" y="0" width="300" height="112" rx="8"/>
+    <text class="b" x="18" y="32">2. 確実性</text>
+    <text class="t" x="18" y="60">高・中・低・非常に低。</text>
+    <text class="t" x="18" y="84">なぜ下がったか脚注を見る。</text>
+  </g>
+  <g transform="translate(730,470)">
+    <rect class="call" x="0" y="0" width="300" height="112" rx="8"/>
+    <text class="b" x="18" y="32">3. 閾値と価値観</text>
+    <text class="t" x="18" y="60">その差は患者に重要か。</text>
+    <text class="t" x="18" y="84">意見が分かれるかを考える。</text>
+  </g>
+</svg>
