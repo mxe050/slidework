@@ -95,7 +95,8 @@ img {
 }
 
 .topnav a:hover,
-.topnav a:focus-visible {
+.topnav a:focus-visible,
+.topnav a[aria-current="page"] {
   color: var(--ink);
   background: var(--soft);
 }
@@ -104,6 +105,10 @@ img {
   width: min(1120px, calc(100% - 32px));
   margin: 0 auto;
   padding: 72px 0;
+}
+
+section[id] {
+  scroll-margin-top: 170px;
 }
 
 .band {
@@ -195,6 +200,13 @@ p {
   margin-top: 28px;
 }
 
+.page-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -220,6 +232,11 @@ p {
   background: #fff;
 }
 
+.button:hover,
+.button:focus-visible {
+  border-color: var(--teal);
+}
+
 .hero-tool,
 .check-panel,
 .case-box,
@@ -233,6 +250,14 @@ p {
 
 .hero-tool h2 {
   font-size: 1.35rem;
+}
+
+.audience-hero {
+  min-height: 0;
+}
+
+.role-tool {
+  align-self: start;
 }
 
 .mentor-avatar {
@@ -800,6 +825,10 @@ textarea {
   margin-top: 8px;
 }
 
+.next-actions {
+  margin-top: 24px;
+}
+
 .audience-paths {
   padding-top: 58px;
   scroll-margin-top: 170px;
@@ -1126,6 +1155,10 @@ textarea {
   }
 
   .hero-actions {
+    flex-direction: column;
+  }
+
+  .page-actions {
     flex-direction: column;
   }
 
