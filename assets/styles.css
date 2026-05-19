@@ -142,7 +142,8 @@ h2,
 h3 {
   line-height: 1.28;
   letter-spacing: 0;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
+  line-break: strict;
 }
 
 p,
@@ -572,6 +573,26 @@ figcaption {
   left: 50%;
   width: 2px;
   background: var(--coral);
+}
+
+.clinical-threshold {
+  position: absolute;
+  top: 62px;
+  bottom: 24px;
+  left: calc(50% + 28px);
+  width: 2px;
+  background: var(--blue);
+}
+
+.clinical-threshold span {
+  position: absolute;
+  left: 10px;
+  top: -20px;
+  width: max-content;
+  color: var(--coral);
+  font-size: 0.9rem;
+  font-weight: 800;
+  white-space: nowrap;
 }
 
 .forest-axis {

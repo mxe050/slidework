@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="360" viewBox="0 0 920 360" role="img" aria-labelledby="title desc">
+  <title id="title">会議前にそろえる4つの材料</title>
+  <desc id="desc">問い、アウトカム、エビデンス、判断と投票を順に分けて準備する図。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#5d6876"/>
+    </marker>
+    <style>
+      .bg{fill:#fff}
+      .title{font:700 28px 'Yu Gothic','Meiryo',sans-serif;fill:#1e2530}
+      .lead{font:500 15px 'Yu Gothic','Meiryo',sans-serif;fill:#5d6876}
+      .card{stroke-width:2;rx:10}
+      .c1{fill:#e9f6f4;stroke:#0f766e}
+      .c2{fill:#eef4ff;stroke:#315fbc}
+      .c3{fill:#fff7e6;stroke:#b47705}
+      .c4{fill:#fde8ef;stroke:#e7a5b3}
+      .num{font:800 15px 'Yu Gothic','Meiryo',sans-serif;fill:#fff}
+      .num-bg{fill:#26313f}
+      .h{font:700 20px 'Yu Gothic','Meiryo',sans-serif;fill:#1e2530}
+      .t{font:500 14px 'Yu Gothic','Meiryo',sans-serif;fill:#4f5d6c}
+      .line{stroke:#5d6876;stroke-width:2;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect class="bg" width="920" height="360"/>
+  <text class="title" x="36" y="48">会議前にそろえる4つの材料</text>
+  <text class="lead" x="36" y="78">資料を全部覚えるより、議論で混ざりやすい層を分けて持ち込みます。</text>
+
+  <g transform="translate(36,126)">
+    <rect class="card c1" x="0" y="0" width="170" height="150" rx="10"/>
+    <circle class="num-bg" cx="28" cy="30" r="18"/>
+    <text class="num" x="23" y="36">1</text>
+    <text class="h" x="20" y="72">問いを固定</text>
+    <text class="t" x="20" y="104">PICOと比較を</text>
+    <text class="t" x="20" y="128">途中で広げない</text>
+  </g>
+  <path class="line" d="M216 201 H264"/>
+
+  <g transform="translate(278,126)">
+    <rect class="card c2" x="0" y="0" width="170" height="150" rx="10"/>
+    <circle class="num-bg" cx="28" cy="30" r="18"/>
+    <text class="num" x="23" y="36">2</text>
+    <text class="h" x="20" y="72">重要度を決める</text>
+    <text class="t" x="20" y="104">重大アウトカムと</text>
+    <text class="t" x="20" y="128">MIDを先に置く</text>
+  </g>
+  <path class="line" d="M462 201 H510"/>
+
+  <g transform="translate(524,126)">
+    <rect class="card c3" x="0" y="0" width="170" height="150" rx="10"/>
+    <circle class="num-bg" cx="28" cy="30" r="18"/>
+    <text class="num" x="23" y="36">3</text>
+    <text class="h" x="20" y="72">SoFを読む</text>
+    <text class="t" x="20" y="104">効果の大きさと</text>
+    <text class="t" x="20" y="128">確実性を確認</text>
+  </g>
+  <path class="line" d="M708 201 H756"/>
+
+  <g transform="translate(770,126)">
+    <rect class="card c4" x="0" y="0" width="114" height="150" rx="10"/>
+    <circle class="num-bg" cx="28" cy="30" r="18"/>
+    <text class="num" x="23" y="36">4</text>
+    <text class="h" x="20" y="72">EtD</text>
+    <text class="t" x="20" y="104">推奨と</text>
+    <text class="t" x="20" y="128">投票</text>
+  </g>
+
+  <text class="lead" x="36" y="322">意見・経験は、どの層への発言かを明確にすると、会議で扱いやすくなります。</text>
+</svg>

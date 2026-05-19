@@ -7,7 +7,7 @@
     </marker>
     <style>
       .bg{fill:#f5f8fb}
-      .center{fill:#26313f}
+      .center{fill:#fde8ef;stroke:#e7a5b3;stroke-width:2}
       .card{fill:#fff;stroke:#d7e0e8;stroke-width:2}
       .primary{fill:#e9f6f4;stroke:#0f766e;stroke-width:2}
       .secondary{fill:#eef4ff;stroke:#315fbc;stroke-width:2}
@@ -15,7 +15,7 @@
       .line{stroke:#415066;stroke-width:2.5;fill:none;marker-end:url(#arrow)}
       .title{font:700 28px 'Yu Gothic','Meiryo',sans-serif;fill:#1e2530}
       .h{font:700 18px 'Yu Gothic','Meiryo',sans-serif;fill:#1e2530}
-      .w{font:700 22px 'Yu Gothic','Meiryo',sans-serif;fill:#fff}
+      .w{font:700 22px 'Yu Gothic','Meiryo',sans-serif;fill:#6e2533}
       .t{font:500 15px 'Yu Gothic','Meiryo',sans-serif;fill:#4f5d6c}
       .small{font:700 13px 'Yu Gothic','Meiryo',sans-serif;fill:#0b5852}
     </style>
@@ -28,7 +28,7 @@
     <rect class="center" x="0" y="0" width="260" height="132" rx="8"/>
     <text class="w" x="44" y="48">推奨の方向</text>
     <text class="w" x="70" y="84">と強さ</text>
-    <text class="t" x="48" y="112" fill="#dce5ee">行う / 行わない、強い / 条件付き</text>
+    <text class="t" x="48" y="112" fill="#6e2533">行う / 行わない、強い / 条件付き</text>
   </g>
 
   <path class="line" d="M312 164 C382 180 410 230 430 258"/>
@@ -82,7 +82,4 @@
     <text class="t" x="18" y="108">受け入れられるか</text>
   </g>
 
-  <rect class="card" x="70" y="548" width="300" height="70" rx="8"/>
-  <text class="h" x="92" y="576">質問の形</text>
-  <text class="t" x="92" y="600">「この欄の判断は患者の生活に照らして妥当ですか」</text>
 </svg>
