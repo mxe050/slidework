@@ -898,7 +898,7 @@ textarea {
 
 .dilemma-buttons {
   display: grid;
-  grid-template-columns: minmax(0, 560px);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
   margin-top: 22px;
 }
@@ -947,6 +947,14 @@ textarea {
   color: var(--muted);
   font-style: normal;
   line-height: 1.55;
+}
+
+.dilemma-button.no-recommendation {
+  border-left-color: var(--coral);
+}
+
+.dilemma-button.no-recommendation span {
+  background: var(--coral);
 }
 
 .audience-grid {
@@ -1140,6 +1148,7 @@ textarea {
   .etd-grid,
   .audience-buttons,
   .audience-grid,
+  .dilemma-buttons,
   .details-grid,
   .meeting-points,
   .post-flow,
