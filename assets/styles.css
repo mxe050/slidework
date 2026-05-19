@@ -193,6 +193,13 @@ p {
   font-size: clamp(1.05rem, 2vw, 1.28rem);
 }
 
+.mobile-reading-note {
+  max-width: 780px;
+  margin-top: 10px;
+  color: var(--coral);
+  font-weight: 800;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
