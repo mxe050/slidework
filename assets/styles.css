@@ -458,6 +458,11 @@ figcaption {
   gap: 14px;
 }
 
+.meeting-example-actions {
+  max-width: 760px;
+  margin-top: 18px;
+}
+
 .post-flow {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -957,6 +962,39 @@ textarea {
   background: var(--coral);
 }
 
+.dilemma-button.simulation {
+  border-left-color: var(--blue);
+}
+
+.dilemma-button.simulation span {
+  background: var(--blue);
+}
+
+.simulation-timeline {
+  display: grid;
+  gap: 12px;
+}
+
+.time-row {
+  display: grid;
+  grid-template-columns: 82px minmax(0, 1fr);
+  gap: 14px;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.time-row time {
+  color: var(--teal-dark);
+  font-weight: 800;
+}
+
+.time-row h3 {
+  margin-bottom: 6px;
+}
+
 .audience-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1267,6 +1305,10 @@ textarea {
 
   .video-card {
     min-height: 210px;
+  }
+
+  .time-row {
+    grid-template-columns: 1fr;
   }
 
   .video-link img {
