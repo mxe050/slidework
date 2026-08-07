@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>パネルの仕事を時系列で見る</title>
+    <meta name="description" content="診療ガイドラインのパネルがSR前のCQ・アウトカム・閾値設定から、SoF・EtDの確認、推奨文と投票までに行うことを時系列で学ぶ資料。">
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body>
+    <header class="topbar" data-topbar>
+      <a class="brand" href="index.html" aria-label="メイン教材へ戻る">
+        <span class="brand-mark" aria-hidden="true">G</span>
+        <span>パネリストのために</span>
+      </a>
+      <nav class="topnav" aria-label="このページの目次">
+        <a href="#overview">全体像</a>
+        <a href="#before-sr">SR前</a>
+        <a href="#outcomes">アウトカム</a>
+        <a href="#review">SR後の資料</a>
+        <a href="#final-panel">最終会議</a>
+        <a href="#wording">推奨文</a>
+        <a href="#coi">COI</a>
+        <a href="index.html">メイン教材</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section article-hero">
+        <div class="hero-copy">
+          <p class="eyebrow">パネルの仕事の全体像</p>
+          <h1><span class="phrase">パネルの仕事を</span><span class="phrase">時系列で見る</span></h1>
+          <p class="lead">
+            診療ガイドラインのパネルは、完成した推奨草案へ最後に投票するだけの集まりではありません。
+            システマティックレビューを始める前に問いとアウトカムを決め、研究がまとまった後は判断表を一項目ずつ確認し、
+            推奨の方向、強さ、日本語の文章まで完成させます。
+          </p>
+          <div class="page-actions">
+            <a class="button primary" href="#overview">最初から読む</a>
+            <a class="button secondary" href="index.html">メイン教材へ戻る</a>
+          </div>
+        </div>
+        <aside class="hero-tool" aria-label="このページで分かること">
+          <img class="mentor-avatar" src="assets/mentor/mentor-point.jpg" alt="案内役が大切な点を示しているイラスト">
+          <h2>このページで分かること</h2>
+          <ul class="plain-list">
+            <li>SR前にパネルが決めること</li>
+            <li>どこで個別評価や投票を行うか</li>
+            <li>アウトカムを約7項目へ整理する理由</li>
+            <li>MIDがない時の考え方</li>
+            <li>SoF・EtDから推奨文を作る順番</li>
+            <li>COIと議論の透明性を守る方法</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section id="overview" class="section band">
+        <div class="section-head">
+          <p class="eyebrow">まず全体を一枚で</p>
+          <h2>二つのパネル会議を、システマティックレビューがつなぎます</h2>
+          <p>
+            最初の会議では「何を調べ、何を大切な結果として扱うか」を決めます。レビュー班はその設計図に沿って研究をまとめます。
+            最終会議では、結果を患者に起きる差へ翻訳し、判断表から推奨を完成させます。
+          </p>
+        </div>
+        <div class="route-grid">
+          <article class="info-card">
+            <p class="audience-label">第1段階：SR前</p>
+            <h3>問いと物差しを決める</h3>
+            <p>CQの優先順位、PICO、アウトカムの重要度、評価時点、MID・意思決定の閾値、重要なサブグループを合意します。</p>
+            <p><strong>成果物：</strong>CQ一覧、アウトカムシート、閾値、承認済みプロトコル</p>
+          </article>
+          <article class="info-card">
+            <p class="audience-label">第2段階：SR作成</p>
+            <h3>決めた設計図で研究をまとめる</h3>
+            <p>レビュー班が検索、採用、データ抽出、バイアスリスク評価、統合、確実性評価を行います。</p>
+            <p><strong>成果物：</strong>SR、Evidence Profile、SoF、EtDの判断材料</p>
+          </article>
+          <article class="info-card">
+            <p class="audience-label">第3段階：最終会議</p>
+            <h3>判断表から推奨を完成させる</h3>
+            <p>EtDの各項目を判断し、方向、強さ、推奨文、注意書き、実装上の留意点を正式に承認します。</p>
+            <p><strong>成果物：</strong>完成EtD、推奨文、正当化、実装・研究課題</p>
+          </article>
+        </div>
+        <div class="callout">
+          <strong>最も大切な区別：</strong>
+          パネルは「何を意思決定に使うか」と「その材料から何を勧めるか」を決めます。レビュー班は、決められた方法で研究を探し、まとめ、確実性の判定案を作ります。
+          パネルが多数決で研究結果を作り変えることも、レビュー班がパネルに代わって推奨を決めることもありません。
+        </div>
+        <h3 class="narrow-head">初めて出会う言葉は、ここだけ押さえれば進めます</h3>
+        <div class="route-grid">
+          <article class="info-card"><h3>CQ</h3><p>診療で答えを必要としている具体的な問いです。「誰に、何をすると、何と比べて、何が変わるか」を整理します。</p></article>
+          <article class="info-card"><h3>PICO</h3><p>対象者、介入、比較対照、アウトカムの頭文字です。例えば「高齢者に新治療を追加すると、標準治療だけの場合より入院が減るか」のように問いを具体化します。</p></article>
+          <article class="info-card"><h3>システマティックレビュー（SR）</h3><p>問いに合う研究を、決めた方法で漏れなく探し、偏りを評価してまとめる作業です。</p></article>
+          <article class="info-card"><h3>詳細表と結果一覧</h3><p>詳細表（Evidence Profile）は確実性判断の理由まで示し、結果一覧（SoF）は重大なアウトカムの効果、信頼区間、確実性を読みやすくまとめます。</p></article>
+          <article class="info-card"><h3>判断表（EtD）</h3><p>利益と害だけでなく、価値観、費用、公平性、受け入れやすさ、実行可能性を順番に判断する表です。</p></article>
+          <article class="info-card"><h3>MID・閾値</h3><p>「この程度の差なら選択を変えるほど重要」と考える物差しです。確立した値がない時は、根拠と不確実性を明記して暫定範囲を置きます。</p></article>
+          <article class="info-card"><h3>エビデンスの確実性</h3><p>研究結果が正しいかの合格点ではなく、その効果推定値をどこまで信頼できるかを4段階で示します。</p></article>
+        </div>
+      </section>
+
+      <section id="before-sr" class="section">
+        <div class="section-head">
+          <p class="eyebrow">第1段階：SRを作る前</p>
+          <h2>最初の会議で決める順番</h2>
+          <p>
+            結果を見てから問いや重要なアウトカムを変えると、都合のよい結果だけを重く扱いやすくなります。
+            重要な判断ほどSR前に行い、誰が、何を根拠に決めたかを記録します。
+          </p>
+        </div>
+        <div class="simulation-timeline">
+          <article class="time-row">
+            <time>STEP 1</time>
+            <div>
+              <h3>COI、役割、投票資格を確認する</h3>
+              <p>全員が利益相反を申告し、議長、方法論担当、投票メンバー、専門顧問を決めます。どの議題で発言・投票を制限するかも、議論が始まる前に決めます。</p>
+            </div>
+          </article>
+          <article class="time-row">
+            <time>STEP 2</time>
+            <div>
+              <h3>候補CQを集め、優先順位をつける</h3>
+              <p>各人が候補を出し、重要性、診療のばらつき、未解決性、患者への影響、作成可能性を個別評価します。その後、採用、保留、除外と理由を合意します。</p>
+            </div>
+          </article>
+          <article class="time-row">
+            <time>STEP 3</time>
+            <div>
+              <h3>PICOと適用範囲を固定する</h3>
+              <p>誰に、何を、何と比べるかに加え、医療現場、併用か置換か、標準治療の内容、評価時点、重要なサブグループまで具体化します。</p>
+            </div>
+          </article>
+          <article class="time-row">
+            <time>STEP 4</time>
+            <div>
+              <h3>意思決定に必要なアウトカムを広く出す</h3>
+              <p>死亡、症状、QOLだけでなく、重篤な害、治療中止、通院、費用、生活への負担も候補にします。研究で測られている項目だけから選んではいけません。</p>
+            </div>
+          </article>
+          <article class="time-row">
+            <time>STEP 5</time>
+            <div>
+              <h3>1〜9点で重要度を評価し、中心項目を整理する</h3>
+              <p>各パネリストが独立に評価し、得点分布を見て再討議します。1つのCQにつき、SoFの中心表は原則として約7項目へ絞りますが、絶対に7項目という規則ではありません。</p>
+            </div>
+          </article>
+          <article class="time-row">
+            <time>STEP 6</time>
+            <div>
+              <h3>MID・閾値とプロトコルを承認する</h3>
+              <p>各アウトカムで、どれほどの差なら選択を変えるほど重要かを決めます。確立したMIDがない場合の扱いも含め、検索・解析・確実性評価の計画を承認します。</p>
+            </div>
+          </article>
+        </div>
+
+        <h3 class="narrow-head">CQの優先順位で見る6つの観点</h3>
+        <div class="route-grid">
+          <article class="info-card"><h3>患者への影響</h3><p>頻度、重症度、生活への影響が大きいか。</p></article>
+          <article class="info-card"><h3>診療のばらつき</h3><p>地域や施設、医療者によって選択が大きく違うか。</p></article>
+          <article class="info-card"><h3>不確実性</h3><p>利益と害のどちらが大きいか、現場が迷っているか。</p></article>
+          <article class="info-card"><h3>新しい情報</h3><p>新薬、新技術、新しい研究によって判断が変わり得るか。</p></article>
+          <article class="info-card"><h3>公平性</h3><p>弱い立場の人、地域差、費用負担に重要な影響があるか。</p></article>
+          <article class="info-card"><h3>作成可能性</h3><p>期間、人員、検索範囲を考えて、質の高いSRを完成できるか。</p></article>
+        </div>
+        <h3 class="narrow-head">優先順位づけで起こりやすい問題</h3>
+        <div class="table-wrap">
+          <table class="mini-table">
+            <thead><tr><th scope="col">起こりやすいこと</th><th scope="col">なぜ問題か</th><th scope="col">パネリストが確認する言葉</th></tr></thead>
+            <tbody>
+              <tr><td>声の大きい専門家の関心が上位になる</td><td>患者への影響より、専門領域の関心や新規性が優先されることがあります。</td><td>「頻度、重症度、診療のばらつき、公平性の各点数も並べて見せてください。」</td></tr>
+              <tr><td>新しい治療だから優先する</td><td>新規性だけでは、患者にとって重要な未解決問題とは限りません。</td><td>「現在の診療で、誰が、どの選択に迷っているCQですか。」</td></tr>
+              <tr><td>一つのCQへ多くを詰め込む</td><td>対象者、介入、比較が混ざり、検索も推奨文も曖昧になります。</td><td>「この問いは一つの推奨文で答えられますか。分ける必要はありませんか。」</td></tr>
+              <tr><td>研究が多い問いだけを選ぶ</td><td>研究が乏しくても、現場で必ず選ばなければならない重要な問いがあります。</td><td>「エビデンス量とは別に、推奨がないことで生じる不利益を評価しましたか。」</td></tr>
+              <tr><td>実施可能性を最後まで確認しない</td><td>重要でも、期間と人員が足りず、不十分なSRになると信頼性を損ないます。</td><td>「必要な検索・解析を、この期限と体制で完了できますか。」</td></tr>
+              <tr><td>COIを最終投票時だけ確認する</td><td>CQを選ぶ段階の偏りは、その後の全工程へ影響します。</td><td>「このCQの採否を決める前に、議題ごとの参加条件を確認しましたか。」</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="mentor-note">
+          <img src="assets/mentor/mentor-clipboard.jpg" alt="案内役が確認事項を示しているイラスト">
+          <p>
+            <strong>会議での発言例：</strong>
+            「このCQは診療のばらつきが大きく、患者への影響も大きいので優先したいです。一方、今年度内に必要なSRを完成できるかも確認したいです。」
+          </p>
+        </div>
+      </section>
+
+      <section id="outcomes" class="section band">
+        <div class="section-head">
+          <p class="eyebrow">アウトカムシートを作る</p>
+          <h2>1〜9点の意味と「約7項目」の考え方</h2>
+          <p>
+            1〜9点は、治療が効く確率でも研究の質でもありません。そのアウトカムが、介入を選ぶかどうかの意思決定にどれほど重要かを表します。
+            まず各人が独立に評価し、平均だけでなく得点の分布を確認します。
+          </p>
+        </div>
+        <div class="route-grid">
+          <article class="concept-card strong-card">
+            <h3>7〜9点：意思決定に重大</h3>
+            <p>推奨を決める中心です。エビデンスが見つからなくても、SoFから消さず「情報なし」と示します。</p>
+          </article>
+          <article class="concept-card">
+            <h3>4〜6点：重要だが重大ではない</h3>
+            <p>推奨本体だけでなく、注意書き、実装、共同意思決定に重要なことがあります。</p>
+          </article>
+          <article class="info-card">
+            <h3>1〜3点：今回の判断では限定的</h3>
+            <p>中心表から外す候補です。単にデータが少ないという理由ではなく、意思決定上の重要性で判断します。</p>
+          </article>
+        </div>
+
+        <div class="callout">
+          <strong>約7項目は、読み手が利益と害を同時に比較するための実務上の目安です。</strong>
+          重大なアウトカムが8項目以上あるなら、無理に削る必要はありません。ただし、多すぎると重要な利益と害が埋もれます。
+          類似項目の統合、評価時点の整理、中心表と補足表の分担を検討します。
+        </div>
+
+        <h3 class="narrow-head">練習用：1つのCQに対するアウトカムシート</h3>
+        <p class="muted">新治療と標準治療を比べる架空の例です。実際には疾患、治療、評価時点に合わせて作ります。</p>
+        <div class="table-wrap">
+          <table class="mini-table decision-table">
+            <caption>各アウトカムで、定義、時点、重要度、MID・閾値を一緒に記録する例</caption>
+            <thead>
+              <tr>
+                <th scope="col">アウトカム</th>
+                <th scope="col">定義・評価時点</th>
+                <th scope="col">重要度の例</th>
+                <th scope="col">MID・閾値の準備</th>
+                <th scope="col">扱い</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>全死亡</td><td>12か月時点の死亡</td><td>9</td><td>絶対人数差と害・負担の釣り合いを検討</td><td>重大</td></tr>
+              <tr><td>重篤な疾患イベント</td><td>90日以内、事前に定めた定義</td><td>8</td><td>1000人あたりの差で閾値を設定</td><td>重大</td></tr>
+              <tr><td>健康関連QOL</td><td>12週、0〜100点の尺度</td><td>8</td><td>同じ尺度・対象・時点のMIDを確認</td><td>重大</td></tr>
+              <tr><td>症状の改善</td><td>4週、事前に決めた改善者</td><td>7</td><td>改善者割合の絶対差で設定</td><td>重大</td></tr>
+              <tr><td>重篤な有害事象</td><td>治療期間中、共通定義を使用</td><td>8</td><td>許容できる増加を1000人あたりで検討</td><td>重大</td></tr>
+              <tr><td>有害事象による中止</td><td>治療期間中の中止</td><td>7</td><td>中止者の絶対人数差で設定</td><td>重大</td></tr>
+              <tr><td>通院・治療負担</td><td>最初の3か月の回数・拘束時間</td><td>6</td><td>回数、時間、自己負担を分けて検討</td><td>重要</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="details-grid">
+          <details class="example-details" open>
+            <summary>信頼できるMIDがある場合</summary>
+            <p>同じ尺度、同じ対象者、同じ状態、同じ評価時点で得られた値かを確認します。改善と悪化でMIDが違う場合や、単一値ではなく範囲で示される場合もあります。</p>
+            <p class="template-quote">例：QOLが0〜100点の尺度で、妥当なMIDが5点なら、効果推定値と信頼区間を5点と比較します。</p>
+          </details>
+          <details class="example-details" open>
+            <summary>確立したMIDがない場合</summary>
+            <p>「MIDがない」を「差が0より大きければ重要」と読み替えてはいけません。価値観研究、面接、意思決定支援の経験、構造化したパネル調査から、暫定的な閾値または妥当な範囲を置きます。</p>
+            <p class="template-quote">例：重篤なイベントが1000人中何人減れば、害・費用・負担を考えても新治療を選ぶかを検討します。</p>
+          </details>
+        </div>
+        <div class="reading-steps">
+          <h3>アウトカムごとに記録する8項目</h3>
+          <ol>
+            <li>名称と、誰が読んでも同じになる具体的な定義</li>
+            <li>利益か害か、望ましい方向</li>
+            <li>測定尺度またはイベントの定義</li>
+            <li>評価時点</li>
+            <li>重要度1〜9点と得点分布</li>
+            <li>MID、意思決定の閾値、または妥当な範囲</li>
+            <li>値の根拠となる研究、調査、仮定</li>
+            <li>不確実性と、見直す場合の条件</li>
+          </ol>
+        </div>
+        <div class="callout">
+          <strong>注意：</strong>
+          MIDは研究結果ではありません。「新治療で5点よくなった」は効果推定値、「5点以上なら選択を変えるほど重要と考える」は判断の物差しです。
+          死亡や有害事象など、通常のMIDがないアウトカムでは、絶対人数差による意思決定の閾値を考えます。
+        </div>
+      </section>
+
+      <section id="review" class="section">
+        <div class="section-head">
+          <p class="eyebrow">第2段階：SR作成と結果一覧</p>
+          <h2>パネルとレビュー班の仕事を混ぜない</h2>
+          <p>
+            パネルは臨床的な問いと判断の物差しを決めます。レビュー班は、その約束に沿って研究を系統的に集め、評価します。
+            役割の境界を明確にすると、専門家の好みや結果を見た後の変更を減らせます。
+          </p>
+        </div>
+        <div class="audience-grid">
+          <article class="audience-panel">
+            <p class="audience-label">パネルが行う</p>
+            <h3>臨床的な意味を明確にする</h3>
+            <ul>
+              <li>対象者、標準治療、適用場面を明確にする</li>
+              <li>重要な臨床背景をレビュー班へ伝える</li>
+              <li>必要なプロトコル変更を正式に承認する</li>
+              <li>完成したSoFと確実性の理由を確認する</li>
+            </ul>
+          </article>
+          <article class="audience-panel">
+            <p class="audience-label">レビュー班が行う</p>
+            <h3>研究を再現可能にまとめる</h3>
+            <ul>
+              <li>検索、採用、データ抽出</li>
+              <li>バイアスリスクと統合可能性の評価</li>
+              <li>相対効果、絶対効果、信頼区間の計算</li>
+              <li>確実性の判定案と理由の作成</li>
+            </ul>
+          </article>
+          <article class="audience-panel">
+            <p class="audience-label">行ってはいけない</p>
+            <h3>結果に合わせて設計図を変えない</h3>
+            <ul>
+              <li>好みの研究だけを採用する</li>
+              <li>都合のよいアウトカムだけを上位にする</li>
+              <li>未評価の治療を最終会議で追加する</li>
+              <li>理由なしに確実性を上げ下げする</li>
+            </ul>
+          </article>
+        </div>
+
+        <h3 class="narrow-head">SRが終わった時に、パネルへ届く資料</h3>
+        <div class="table-wrap">
+          <table class="mini-table">
+            <thead>
+              <tr><th scope="col">資料</th><th scope="col">何が書かれているか</th><th scope="col">パネルが確認すること</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>SR本文</td><td>検索、採用研究、解析方法、結果、限界</td><td>事前に決めたPICOとアウトカムに沿っているか</td></tr>
+              <tr><td>Evidence Profile</td><td>アウトカムごとの効果と、確実性を下げた・上げた理由</td><td>各領域の理由が効果推定値へどう影響するか</td></tr>
+              <tr><td>SoF表</td><td>相対効果、絶対効果、信頼区間、対象人数、確実性</td><td>患者に起きる利益・害を同じ尺度で比較できるか</td></tr>
+              <tr><td>EtDの判断材料</td><td>効果、価値観、費用、公平性、受容性、実行可能性</td><td>推奨を決めるための情報がそろっているか</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="example-panel">
+          <h3>SoF表を読む時の固定した順番</h3>
+          <ol class="plain-list">
+            <li><strong>アウトカム：</strong>重大か、定義と時点は何か。</li>
+            <li><strong>ベースラインリスク：</strong>標準治療では100人・1000人中何人に起きるか。</li>
+            <li><strong>相対効果：</strong>RR、OR、HRと信頼区間はどうか。</li>
+            <li><strong>絶対効果：</strong>新治療では何人になり、群間差は何人か。</li>
+            <li><strong>MID・閾値：</strong>点推定値と信頼区間が、重要な差を超えるか。</li>
+            <li><strong>確実性：</strong>どこまで確かで、なぜ下がったか。</li>
+          </ol>
+          <p class="template-quote">
+            読み上げ例：「標準治療では1000人中100人、新治療では約80人です。差は1000人中20人少ないと推定され、幅は5〜32人少ないです。
+            重要な差を15人と置くと点推定値は超えますが、信頼区間はまたぎます。エビデンスの確実性は低です。」
+          </p>
+          <p>
+            これは「1000人中20人が成功する」という意味ではありません。標準治療群と新治療群の間で、望ましくないアウトカムを経験する人が1000人中20人違うという意味です。
+          </p>
+        </div>
+      </section>
+
+      <section id="final-panel" class="section band">
+        <div class="section-head">
+          <p class="eyebrow">第3段階：最終パネル会議</p>
+          <h2>判断表を一項目ずつ確定してから、推奨へ進む</h2>
+          <p>
+            最終会議では、最初から「この治療に賛成か反対か」を争いません。どの判断項目で意見が分かれているかを見える形にし、
+            全体の判断がそろってから推奨の方向と強さを決めます。
+          </p>
+        </div>
+        <div class="simulation-timeline">
+          <article class="time-row"><time>開始時</time><div><h3>COIと投票資格を更新</h3><p>新しい関係や追加資料との関連を確認し、発言・投票制限を再確認します。</p></div></article>
+          <article class="time-row"><time>確認1</time><div><h3>CQ、PICO、対象範囲を再確認</h3><p>会議中に対象者、介入、比較対照が広がっていないかを確認します。</p></div></article>
+          <article class="time-row"><time>確認2</time><div><h3>重大なアウトカムを一行ずつ読む</h3><p>重要度、ベースラインリスク、相対効果、絶対効果、信頼区間、閾値、確実性の順に確認します。</p></div></article>
+          <article class="time-row"><time>判断</time><div><h3>EtDの各項目を個別判断して討議</h3><p>他者の意見を聞く前の初期判断を示し、分布を見て、不一致の理由を話し合います。</p></div></article>
+          <article class="time-row"><time>推奨1</time><div><h3>方向を先に決める</h3><p>介入を行う側か、行わない側かを決めます。方向と強さを一度に決めません。</p></div></article>
+          <article class="time-row"><time>推奨2</time><div><h3>強さを決める</h3><p>ほぼ全員に当てはまる強い推奨か、価値観や状況で選択が分かれる条件付き推奨かを決めます。</p></div></article>
+          <article class="time-row"><time>完成</time><div><h3>推奨文、注意書き、実装方法を承認</h3><p>日本語の文章がEtDの判断理由と一致し、読者が行動できるかを確認します。</p></div></article>
+        </div>
+
+        <h3 class="narrow-head">EtDで判断する主な項目</h3>
+        <div class="etd-grid">
+          <article><h3>望ましい効果</h3><p>死亡、症状、QOLなど、重要な利益はどの程度か。</p></article>
+          <article><h3>望ましくない効果</h3><p>重篤な害、中止、通院、生活上の負担はどの程度か。</p></article>
+          <article><h3>エビデンスの確実性</h3><p>効果推定値をどこまで信頼でき、何が不確実か。</p></article>
+          <article><h3>価値観と選好</h3><p>アウトカムの重みづけや選択が、人によって大きく分かれるか。</p></article>
+          <article><h3>利益と害のバランス</h3><p>重大な利益は、害・負担を上回るか。</p></article>
+          <article><h3>資源と費用</h3><p>必要な費用、人員、設備と費用対効果はどうか。</p></article>
+          <article><h3>公平性</h3><p>格差を改善するか、特定の人を取り残すか。</p></article>
+          <article><h3>受容性と実行可能性</h3><p>本人、医療者、組織に受け入れられ、現場で実行できるか。</p></article>
+        </div>
+
+        <h3 class="narrow-head">判断表で起こりやすい読み違い</h3>
+        <div class="table-wrap">
+          <table class="mini-table">
+            <thead><tr><th scope="col">判断項目</th><th scope="col">避けたい近道</th><th scope="col">会議で確かめること</th></tr></thead>
+            <tbody>
+              <tr><td>望ましい効果</td><td>有意差があるので「大きな利益」とする</td><td>重大アウトカムの絶対人数差と信頼区間は、事前の閾値を超えるか。</td></tr>
+              <tr><td>望ましくない効果</td><td>重篤な害だけを見て、通院・治療中止・生活負担を落とす</td><td>害の種類、重さ、持続時間、回復可能性を利益と同じ単位で比較できるか。</td></tr>
+              <tr><td>確実性</td><td>「低いから効果なし」または「第3相試験だから高い」と決める</td><td>どのアウトカムの確実性か。下げた理由は点推定値と信頼区間の解釈をどう変えるか。</td></tr>
+              <tr><td>価値観</td><td>「人それぞれ」で議論を終える</td><td>何を重く見る人で選択が変わり、推奨文のどこへ条件を残すか。</td></tr>
+              <tr><td>資源・費用</td><td>薬価だけを比べる</td><td>人員、設備、入院、通院、家族の時間、自己負担を含めるとどうか。</td></tr>
+              <tr><td>公平性</td><td>平均的な患者だけで判断する</td><td>アクセスしにくい人、費用負担が重い人、地域差への影響はどうか。</td></tr>
+              <tr><td>受容性・実行可能性</td><td>専門施設でできるので全国で実施可能とする</td><td>誰が、どこで、どの訓練・設備・監視体制を用いて実施するか。</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="reading-steps">
+          <h3>投票結果が割れた時の進め方</h3>
+          <ol>
+            <li>まず投票分布を示し、多数意見だけで結論にしません。</li>
+            <li>最も離れた判断をした人へ、どの資料、アウトカム、閾値、仮定が理由かを短く確認します。</li>
+            <li>事実の読み違い、資料不足、価値判断の違いを分けます。平均点を作って違いを消してはいけません。</li>
+            <li>新しい根拠が共有された場合だけ判断を見直し、同じ質問で再投票します。</li>
+            <li>合意基準を満たしても重要な反対理由が残る時は、EtDの正当化、注意書き、議事録へ残します。</li>
+          </ol>
+          <p class="template-quote">発言例：「結果が分かれたのは、効果の読み方でしょうか、重要と考える人数差でしょうか、それとも通院負担の重みでしょうか。違っている項目を一つに絞って確認したいです。」</p>
+        </div>
+
+        <h3 class="narrow-head">パネルが評価・投票・承認する場所</h3>
+        <div class="table-wrap">
+          <table class="mini-table">
+            <thead>
+              <tr><th scope="col">時点</th><th scope="col">対象</th><th scope="col">基本的な進め方</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>SR前</td><td>CQの優先順位</td><td>個別評価、分布表示、討議、採用・保留・除外と理由の承認</td></tr>
+              <tr><td>SR前</td><td>アウトカムの重要度</td><td>各人が1〜9点で評価し、重大・重要・除外を決める</td></tr>
+              <tr><td>SR前</td><td>MID・閾値</td><td>根拠、対象者、尺度、時点、範囲、不確実性を確認して合意</td></tr>
+              <tr><td>SR前〜作成中</td><td>プロトコルと変更</td><td>変更理由、結果を知る前か後か、承認日を記録</td></tr>
+              <tr><td>最終会議</td><td>EtDの各項目</td><td>個別判断、分布表示、理由の討議、必要なら再投票</td></tr>
+              <tr><td>最終会議</td><td>推奨の方向</td><td>介入を行う側か、行わない側かを先に決める</td></tr>
+              <tr><td>最終会議</td><td>推奨の強さ</td><td>強い推奨か条件付き推奨かを、方向と分けて決める</td></tr>
+              <tr><td>最終会議</td><td>推奨文・注意書き</td><td>対象、行動、条件、理由、実装方法まで正式承認</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="callout">
+          <strong>投票は、議論を省くための多数決ではありません。</strong>
+          他者の影響を受ける前の判断分布を見えるようにし、どの資料・仮定・価値判断が違うかを特定する道具です。
+          合意基準、匿名投票を使う場面、欠席者の扱い、同数時の処理は会議前に定めます。
+        </div>
+      </section>
+
+      <section id="wording" class="section">
+        <div class="section-head">
+          <p class="eyebrow">日本のガイドラインで特に重要</p>
+          <h2>方向、強さ、推奨文を分けて決める</h2>
+          <p>
+            日本語では語尾が曖昧になると、強い推奨なのか条件付き推奨なのか、何をすべきかが読者へ伝わりません。
+            まず方向、次に強さ、最後に文章という順番を守ります。
+          </p>
+        </div>
+        <div class="post-flow">
+          <article><p class="audience-label">1. 方向</p><h3>行うか、行わないか</h3><p>比較対照を含め、どちら側を支持するかを決めます。</p></article>
+          <article><p class="audience-label">2. 強さ</p><h3>強いか、条件付きか</h3><p>ほぼ全員に当てはまるか、選択が分かれるかを判断します。</p></article>
+          <article><p class="audience-label">3. 文章</p><h3>誰に何をするか</h3><p>対象者、介入、比較、条件を行動可能な一文にします。</p></article>
+          <article><p class="audience-label">4. 補足</p><h3>理由と実装を書く</h3><p>注意書き、共同意思決定、実装、モニタリングを加えます。</p></article>
+        </div>
+
+        <div class="template-list next-actions">
+          <p><strong>強い推奨：</strong>「○○の成人に対して、標準治療に加えてA治療を行うことを推奨する（強い推奨、エビデンスの確実性：中）。」</p>
+          <p><strong>条件付き推奨：</strong>「○○の成人に対して、標準治療に加えてA治療を行うことを提案する（条件付き推奨、エビデンスの確実性：低）。」</p>
+          <p><strong>反対方向：</strong>「○○の成人に対して、A治療を行わないことを推奨する／提案する。」</p>
+          <p><strong>複数の妥当な選択：</strong>「○○の成人に対して、AまたはBのいずれかを選択することを提案する。」</p>
+        </div>
+        <p class="muted">
+          「推奨する」「提案する」の使い分けは組織の表現規則に従います。ただし、語尾だけで推測させず、強い推奨か条件付き推奨かを必ず明記します。
+        </p>
+
+        <div class="concept-grid">
+          <article class="concept-card">
+            <h3>推奨文に必要な情報</h3>
+            <ul class="plain-list">
+              <li>誰に適用するか</li>
+              <li>何を行う、または行わないか</li>
+              <li>必要なら何と比較したか</li>
+              <li>方向と強さ</li>
+              <li>エビデンスの確実性</li>
+              <li>条件、例外、重要なサブグループ</li>
+            </ul>
+          </article>
+          <article class="concept-card strong-card">
+            <h3>避けたい文章</h3>
+            <ul class="plain-list">
+              <li>「有用である」「考慮してもよい」だけで行動が不明</li>
+              <li>対象者や比較対照が抜けている</li>
+              <li>条件付き推奨を「効果がない」と説明する</li>
+              <li>未評価の治療を推奨文へ追加する</li>
+              <li>確実性が非常に低いだけで推奨なしにする</li>
+            </ul>
+          </article>
+        </div>
+        <div class="callout">
+          <strong>条件付き推奨は、判断を放棄した文章ではありません。</strong>
+          利益と害、負担、価値観によって選択が分かれる時に、何を説明し、何を一緒に考えるかを示す重要な推奨です。
+          注意書きには、絶対効果、副作用、通院、費用、重視するアウトカムなど、選択を左右する項目を具体的に書きます。
+        </div>
+        <div class="callout soft">
+          <strong>「推奨なし」は、確実性の低さだけでは決めません。</strong>
+          非常に低い確実性でも、現場で選択が避けられず、パネルが方向を示す方が患者の利益になる場合があります。
+          一方、どちらかへ方向づけること自体が誤解や不利益を増やす場合は、推奨なしが妥当なこともあります。
+          推奨を出す場合と出さない場合の害を比べ、理由を残します。
+        </div>
+      </section>
+
+      <section id="coi" class="section band">
+        <div class="section-head">
+          <p class="eyebrow">最初から最後まで</p>
+          <h2>COIは、最終投票だけの確認事項ではありません</h2>
+          <p>
+            COIは人を責めるための言葉ではなく、判断過程とパネリスト本人を守る仕組みです。
+            金銭的関係だけでなく、役職、共同研究、専門領域、特定の治療や手技への強い関与など、議題に関連する背景を組織の規則で評価します。
+          </p>
+        </div>
+        <div class="lesson-grid">
+          <article class="lesson">
+            <h3>確認する時点</h3>
+            <ul class="plain-list">
+              <li>パネルを構成する時</li>
+              <li>CQとアウトカムを優先する前</li>
+              <li>重要な追加資料が出た時</li>
+              <li>最終会議と推奨投票の直前</li>
+              <li>新しい関係が生じた時は随時</li>
+            </ul>
+          </article>
+          <article class="lesson">
+            <h3>管理する内容</h3>
+            <ul class="plain-list">
+              <li>申告内容と議題との関連性</li>
+              <li>発言、投票、退席の必要性</li>
+              <li>専門顧問として限定参加するか</li>
+              <li>誰がどの規則で判断したか</li>
+              <li>会議記録と公開方法</li>
+            </ul>
+          </article>
+        </div>
+        <div class="callout">
+          <strong>本人が「影響されない」と自己判定して終わらせません。</strong>
+          監督する委員会が議題との関連性を判断し、必要な専門知識は得ながら、推奨の方向・強さを決める場面では規則に沿って参加を管理します。
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <p class="eyebrow">科学論文に慣れていなくても大丈夫です</p>
+          <h2>計算ではなく、判断に必要な説明を求めてください</h2>
+          <p>
+            当事者・市民の視点を担うメンバーや、科学論文を読む機会が少ないメンバーも、統計計算を一人で行う必要はありません。
+            難しい用語を説明するのは方法論担当者の役割です。分からないまま投票せず、患者に起きることへ翻訳してもらってください。
+            次の質問は会議を止めるのではなく、推奨を読者に使える形へ近づけます。
+          </p>
+        </div>
+        <div class="phrase-bank">
+          <p>「標準治療と比べて、1000人中何人の差ですか。」</p>
+          <p>「その差は、事前に決めた重要な差を超えますか。」</p>
+          <p>「信頼区間の両端では、患者に何が起きますか。」</p>
+          <p>「エビデンスの確実性が下がった理由を、平易な言葉で説明できますか。」</p>
+          <p>「副作用、通院、費用、生活への負担は、標準治療とどう違いますか。」</p>
+          <p>「この推奨が当てはまらない人、選択が変わる人は誰ですか。」</p>
+        </div>
+      </section>
+
+      <section class="section band">
+        <div class="section-head">
+          <p class="eyebrow">会議で決まらない時</p>
+          <h2>結論を急がず、次回へ渡す資料を完成させる</h2>
+          <p>
+            対面会議で決まらないことはあります。その場合は「まとまらなかった」で終わらず、未解決のEtD項目、意見が違う理由、追加資料、推奨文の複数案、再投票方法を整理します。
+          </p>
+        </div>
+        <div class="concept-grid">
+          <article class="concept-card">
+            <h3>その場で残すもの</h3>
+            <ul class="plain-list">
+              <li>未合意のEtD項目と選択肢</li>
+              <li>意見が違う根拠、仮定、閾値</li>
+              <li>追加確認が必要な資料</li>
+              <li>推奨文案と修正担当者</li>
+              <li>反対理由と少数意見の記録場所</li>
+            </ul>
+          </article>
+          <article class="concept-card">
+            <h3>次回までに決めるもの</h3>
+            <ul class="plain-list">
+              <li>資料配布と個別回答の期限</li>
+              <li>匿名アンケートかWeb会議か</li>
+              <li>再投票の対象と合意基準</li>
+              <li>COIの再確認と投票資格</li>
+              <li>最終承認と議事録公開の手順</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section sources">
+        <div class="section-head">
+          <p class="eyebrow">根拠資料</p>
+          <h2>このページの構成に用いた主な資料</h2>
+        </div>
+        <ul class="source-list">
+          <li>GIN-McMasterガイドライン開発チェックリスト2025</li>
+          <li>GRADE Guidelines 2: Framing the question and deciding on important outcomes</li>
+          <li>Core GRADE 6: Summary of Findings</li>
+          <li>Core GRADE 7: Evidence to Decision</li>
+          <li><a href="https://help.gradepro.org/support/solutions/articles/204000074300-questions-generation-panelist-perspective">GRADEpro：Questions generation, panelist perspective</a></li>
+          <li><a href="https://help.gradepro.org/support/solutions/articles/204000074370-outcomes-generation-panelist-perspective">GRADEpro：Outcomes generation, panelist perspective</a></li>
+          <li><a href="https://help.gradepro.org/support/solutions/articles/204000076838-completing-etd">GRADEpro：Completing an Evidence-to-Decision framework</a></li>
+        </ul>
+        <div class="page-actions">
+          <a class="button primary" href="index.html#meeting">メイン教材の「会議の実際」へ進む</a>
+          <a class="button secondary" href="#top">このページの先頭へ戻る</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>パネルの仕事を、SR前の準備から推奨文の完成まで時系列で確認する資料です。</p>
+      <a href="index.html">メイン教材へ戻る</a>
+    </footer>
+  </body>
+
+</html>

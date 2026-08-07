@@ -726,7 +726,15 @@ input[type="radio"] {
   align-items: start;
 }
 
+.mini-table caption {
+  padding: 0 0 10px;
+  color: var(--muted);
+  font-weight: 700;
+  text-align: left;
+}
+
 .mini-table {
+
   width: 100%;
   border-collapse: collapse;
   margin: 18px 0;
@@ -1307,7 +1315,12 @@ textarea {
     max-width: 100%;
   }
 
+  .time-row time {
+    font-size: 0.85rem;
+  }
+
   .hero-tool,
+
   .mentor-callout,
   .mentor-note,
   .figure-panel,
