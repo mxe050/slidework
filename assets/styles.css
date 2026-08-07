@@ -1475,6 +1475,162 @@ textarea {
   }
 }
 
+.role-boundary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin: 30px 0 24px;
+}
+
+.role-boundary {
+  min-width: 0;
+  padding: 24px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-left: 6px solid var(--teal);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.role-boundary.organisation-owned {
+  border-left-color: var(--amber);
+}
+
+.role-boundary ol,
+.role-boundary ul {
+  margin: 12px 0 0;
+  padding-left: 1.35rem;
+}
+
+.action-map {
+  display: grid;
+  gap: 18px;
+  margin: 32px 0;
+}
+
+.action-stage {
+  display: grid;
+  grid-template-columns: minmax(210px, 0.72fr) minmax(0, 2.28fr);
+  min-width: 0;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.action-stage-head {
+  min-width: 0;
+  padding: 24px;
+  background: #eef5f4;
+  border-right: 1px solid var(--line);
+}
+
+.action-stage:nth-child(even) .action-stage-head {
+  background: #f3f6fb;
+}
+
+.action-stage-head h3 {
+  margin-bottom: 10px;
+}
+
+.action-stage-head p:last-child {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.action-details {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  min-width: 0;
+  margin: 0;
+}
+
+.action-details > div {
+  min-width: 0;
+  padding: 20px 16px;
+  border-left: 1px solid var(--line);
+}
+
+.action-details > div:first-child {
+  border-left: 0;
+}
+
+.action-details dt {
+  margin-bottom: 8px;
+  color: var(--teal-dark);
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.action-details dd {
+  margin: 0;
+  color: var(--ink);
+  font-size: 0.93rem;
+  line-height: 1.7;
+}
+
+.vote-distinction {
+  margin-top: 26px;
+  padding: 24px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-left: 6px solid var(--blue);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.vote-distinction > h3 {
+  margin-bottom: 18px;
+}
+
+@media (max-width: 900px) {
+  .role-boundary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .action-stage {
+    grid-template-columns: 1fr;
+  }
+
+  .action-stage-head {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .action-details {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .action-details > div,
+  .action-details > div:first-child {
+    border-left: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+}
+
+@media (max-width: 560px) {
+  .role-boundary,
+  .action-stage-head,
+  .vote-distinction {
+    padding: 18px;
+  }
+
+  .action-details {
+    grid-template-columns: 1fr;
+  }
+
+  .action-details > div,
+  .action-details > div:first-child {
+    padding: 16px 18px;
+    border-left: 0;
+  }
+
+  .action-details > div:last-child {
+    border-bottom: 0;
+  }
+}
+
 .site-footer {
 
   display: flex;
