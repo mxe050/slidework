@@ -351,6 +351,45 @@
         </div>
       </section>
 
+      <section id="workflow-forest" class="section band">
+        <div class="section-head">
+          <p class="eyebrow">結果一覧を図でも確かめる</p>
+          <h2>フォレストプロットは、点と横線を順に読みます</h2>
+          <p>
+            結果一覧の数字だけでなく、研究ごとの点推定値と信頼区間を図で確認すると、研究間の違い、結果の幅、
+            「差なし」の線や臨床的に重要な差の目安をまたいでいるかが見えやすくなります。
+          </p>
+        </div>
+        <div class="forest-wrap" aria-label="研究ごとの効果と統合結果を示す簡略化したフォレストプロット">
+          <div class="forest-axis">
+            <span>比較が有利</span>
+            <span>差なし</span>
+            <span>介入が有利</span>
+          </div>
+          <div class="clinical-threshold" aria-hidden="true">
+            <span>臨床的な閾値</span>
+          </div>
+          <div class="forest-row">
+            <span>研究A</span><i style="--left: 58%; --width: 18%"></i>
+          </div>
+          <div class="forest-row">
+            <span>研究B</span><i style="--left: 48%; --width: 26%"></i>
+          </div>
+          <div class="forest-row">
+            <span>統合結果</span><i class="pooled" style="--left: 55%; --width: 14%"></i>
+          </div>
+        </div>
+        <div class="route-grid">
+          <article class="info-card"><h3>点を見る</h3><p>点は最もありそうな効果です。どちら側にあり、重要な差の目安を超えるかを見ます。</p></article>
+          <article class="info-card"><h3>横線を見る</h3><p>横線は結果の幅です。「差なし」や重要な差の目安をまたぐなら、結論が変わり得ます。</p></article>
+          <article class="info-card"><h3>研究同士を比べる</h3><p>点や横線が大きく離れる時は、対象者、治療、追跡期間、バイアスの違いを確認します。</p></article>
+        </div>
+        <div class="callout">
+          <strong>図から推奨へ急がない：</strong>
+          図が介入に有利でも、それだけで推奨は決まりません。絶対人数差、重大なアウトカム、エビデンスの確実性、害と負担を確認してから判断表へ進みます。
+        </div>
+      </section>
+
       <section id="final-panel" class="section band">
         <div class="section-head">
           <p class="eyebrow">第3段階：最終パネル会議</p>
