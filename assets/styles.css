@@ -2947,3 +2947,260 @@ textarea {
     gap: 4px;
   }
 }
+
+
+/* Homepage workflow and separated learning guides */
+.workflow-home-hero {
+  min-height: 560px;
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+
+.home-hero-actions .button {
+  min-height: 50px;
+  padding: 12px 18px;
+}
+
+.home-guide-section {
+  padding-top: 44px;
+  padding-bottom: 54px;
+}
+
+.home-video-prompt {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: center;
+  margin: 28px 0 18px;
+  padding: 20px 22px;
+  color: var(--ink);
+  background: #fff7f5;
+  border: 2px solid var(--coral);
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.home-video-prompt:hover,
+.home-video-prompt:focus-visible {
+  background: #fff0ed;
+  outline: 3px solid rgba(201, 74, 59, 0.2);
+  outline-offset: 2px;
+}
+
+.home-video-time {
+  display: inline-grid;
+  place-items: center;
+  width: 64px;
+  min-height: 48px;
+  color: #fff;
+  background: var(--coral);
+  border-radius: 8px;
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.home-video-copy {
+  display: grid;
+  gap: 2px;
+}
+
+.home-video-copy strong {
+  color: var(--coral);
+  font-size: 1.16rem;
+}
+
+.home-video-copy span {
+  color: var(--muted);
+}
+
+.home-link-arrow {
+  font-size: 1.45rem;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.home-guide-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.home-guide-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 14px;
+  align-items: start;
+  min-width: 0;
+  min-height: 184px;
+  padding: 22px;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-top: 6px solid var(--teal);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+}
+
+.home-guide-card.is-reading {
+  border-top-color: var(--blue);
+}
+
+.home-guide-card.is-discussion {
+  border-top-color: var(--coral);
+}
+
+.home-guide-card:hover,
+.home-guide-card:focus-visible {
+  border-color: var(--teal);
+  transform: translateY(-2px);
+}
+
+.home-guide-card > span:nth-child(2) {
+  display: grid;
+  gap: 5px;
+}
+
+.home-guide-card small {
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.home-guide-card strong {
+  font-size: 1.14rem;
+  line-height: 1.45;
+}
+
+.home-guide-card em {
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-style: normal;
+  line-height: 1.65;
+}
+
+.home-guide-number {
+  display: inline-grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  color: #fff;
+  background: var(--teal);
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+.is-reading .home-guide-number {
+  background: var(--blue);
+}
+
+.is-discussion .home-guide-number {
+  background: var(--coral);
+}
+
+.action-stage-footer {
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 430px);
+}
+
+.action-detail-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  width: 100%;
+  min-height: 56px;
+  padding: 13px 16px;
+  color: #fff;
+  background: var(--teal);
+  border: 2px solid var(--teal);
+  border-radius: 8px;
+  font-size: 1rem;
+  line-height: 1.45;
+  text-decoration: none;
+  white-space: normal;
+}
+
+.action-detail-link::after {
+  content: "→";
+  flex: 0 0 auto;
+  font-size: 1.2rem;
+}
+
+.action-detail-link:hover,
+.action-detail-link:focus-visible {
+  color: #fff;
+  background: var(--teal-dark);
+  border-color: var(--teal-dark);
+  outline: 3px solid rgba(15, 118, 110, 0.18);
+  outline-offset: 2px;
+}
+
+.evidence-reading-page .workflow-entry-block {
+  margin-top: 0;
+}
+
+.reading-guide-hero,
+.discussion-guide-hero {
+  min-height: 560px;
+}
+
+@media (max-width: 980px) {
+  .home-guide-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-guide-card {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .workflow-home-hero,
+  .reading-guide-hero,
+  .discussion-guide-hero {
+    min-height: 0;
+  }
+
+  .action-stage-footer {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .home-guide-section {
+    padding-top: 34px;
+    padding-bottom: 42px;
+  }
+
+  .home-video-prompt {
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .home-video-prompt .home-link-arrow {
+    display: none;
+  }
+
+  .home-video-time {
+    width: 54px;
+    min-height: 44px;
+  }
+
+  .home-video-copy strong {
+    font-size: 1.03rem;
+  }
+
+  .home-guide-card {
+    grid-template-columns: auto minmax(0, 1fr);
+    padding: 18px 16px;
+  }
+
+  .home-guide-card > .home-link-arrow {
+    display: none;
+  }
+
+  .action-detail-link {
+    min-height: 58px;
+    padding: 14px 16px;
+  }
+}
