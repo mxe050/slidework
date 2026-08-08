@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>資料・表・数字の読み方 | パネリストのために</title>
+    <meta name="description" content="診療ガイドラインのパネリストが、要約表、人数差、信頼区間、重要な差、フォレストプロット、判断表を投票理由へつなげる実践教材。">
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body class="evidence-reading-page">
+    <header class="topbar" data-topbar>
+      <a class="brand" href="index.html#top" aria-label="第一面へ戻る">
+        <span class="brand-mark" aria-hidden="true">G</span>
+        <span>パネリストのために</span>
+      </a>
+      <nav class="topnav" aria-label="資料の読み方の目次">
+        <a href="index.html#action-map">7段階の流れ</a>
+        <a href="#ci">結果の幅</a>
+        <a href="#sof">要約表</a>
+        <a href="#absolute-effect">人数差</a>
+        <a href="#mid">重要な差</a>
+        <a href="#forest-plot">フォレスト図</a>
+        <a href="#etd">判断表</a>
+        <a href="#vote">投票</a>
+        <a href="panel-discussion-guide.html">議論の心得</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section article-hero reading-guide-hero">
+        <div class="hero-copy">
+          <p class="eyebrow">必要な時だけ開く、資料読解の実践ガイド</p>
+          <h1><span class="phrase">資料・表・数字を、</span><span class="phrase">投票の言葉に変える</span></h1>
+          <p class="lead">
+            研究結果の要約表や判断表を読み、「患者にとって何がどのくらい変わるのか」「その見積もりをどこまで信じられるのか」を、
+            推奨の方向・強さと投票理由へつなげるページです。第一面の7段階で、今読む必要があると分かった項目から始めてください。
+          </p>
+          <div class="page-actions">
+            <a class="button primary" href="#visual-reading">図から読み方をつかむ</a>
+            <a class="button secondary" href="index.html#action-map">7段階の流れへ戻る</a>
+          </div>
+        </div>
+        <aside class="hero-tool" aria-label="このページで読めること">
+          <img class="mentor-avatar" src="assets/mentor/mentor-guide.jpg" alt="案内役が資料の読み方を示しているイラスト">
+          <h2>このページで読むもの</h2>
+          <ul class="plain-list">
+            <li>「差がある・ない」だけにしない読み方</li>
+            <li>100人・1000人中の群間差</li>
+            <li>どのくらいの差なら重要か</li>
+            <li>要約表とフォレストプロット</li>
+            <li>判断表から推奨と投票へ進む順番</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section id="route" class="section">
+        <div class="workflow-entry-block">
+          <p class="workflow-entry-label">会議の流れに戻りたい時</p>
+          <a class="workflow-index-button" href="index.html#action-map">
+            <span class="workflow-index-kicker">第一面の7段階へ戻る</span>
+            <span class="workflow-index-copy">
+              <strong>今は、どの資料を読み、何を判断・投票する時期か</strong>
+              <span>会議案内から外部査読後までを7段階に分け、各時期の「読む資料」「判断・投票」「残すもの」だけを一覧で確認できます。</span>
+            </span>
+            <span class="workflow-index-open">7段階の流れを見る <span aria-hidden="true">→</span></span>
+            <span class="workflow-index-route" aria-hidden="true">
+              会議案内 → 問い → 1〜9点 → 重要な差 → 結果一覧 → 最終投票 → 査読後
+            </span>
+          </a>
+        </div>
+        <div class="main-course-start" aria-label="資料・表・数字の読み方の開始">
+          <span>ここからは資料・表・数字の読み方</span>
+          <p>研究結果の要約表、人数差、研究ごとの結果の図、判断表（EtD表）を、図と具体例で順に学びます。</p>
+        </div>
+        <div class="section-head">
+          <p class="eyebrow">全体像</p>
+          <h2>投票までの地図</h2>
+          <p>
+            最終会議では、研究結果そのものに投票するのではありません。研究をまとめた資料と判断表をもとに作られた推奨草案を読み、
+            「この判断は患者にとって納得できるか」を検討して投票します。結論がその場でまとまらない時は、論点を残して後日のWeb会議やアンケートで続けます。
+          </p>
+        </div>
+        <figure class="figure-panel">
+          <img src="assets/image2/learning-map.svg" alt="問いの整理から研究のまとめ、判断表、推奨草案、投票までの流れとパネリストの確認点を示す図">
+          <figcaption>
+            図1：パネリストの役割は、日本の医療の道しるべを決める責務を担う重要な存在です。と言っても、気負いすぎずに議論しましょう。
+          </figcaption>
+        </figure>
+
+        <div id="visual-reading" class="visual-index">
+          <div class="visual-index-copy">
+            <p class="eyebrow">図から読み方を取り戻す</p>
+            <h3>この4つは、何度でも行き来してください</h3>
+            <p>
+              最初から全部を暗記する必要はありません。要約表で全体を見て、人数差へ戻り、研究ごとの図で幅を確かめ、最後に判断表へ進みます。
+              図と文章を往復することが、推奨草案を自分の言葉で説明する近道です。
+            </p>
+          </div>
+          <nav class="visual-shortcuts" aria-label="重要な図解への近道">
+            <a href="#sof">
+              <span>1</span>
+              <strong>研究結果の要約表</strong>
+              <em>効果・幅・確実性を一組で読む</em>
+            </a>
+            <a href="#absolute-effect">
+              <span>2</span>
+              <strong>1000人中の人数差</strong>
+              <em>「成功した人数」ではなく群間差を読む</em>
+            </a>
+            <a href="#forest-plot">
+              <span>3</span>
+              <strong>研究ごとの結果の図</strong>
+              <em>点推定値、信頼区間、重要な差を見る</em>
+            </a>
+            <a href="#etd">
+              <span>4</span>
+              <strong>判断表</strong>
+              <em>利益・害・価値観を推奨へつなぐ</em>
+            </a>
+          </nav>
+        </div>
+
+        <div class="workflow-extension">
+          <div class="section-head compact-head">
+            <p class="eyebrow">この地図を前後に広げる</p>
+            <h3>パネルの仕事は、最終投票より前から始まります</h3>
+            <p>
+              第一面の7段階では、システマティックレビューを始める前の問い・アウトカム・重要な差の決定から、
+              最終会議で推奨の方向・強さ・日本語の文章を完成させるところまでを時系列で確認できます。
+            </p>
+          </div>
+          <div class="route-grid">
+            <article class="info-card">
+              <p class="audience-label">レビュー前</p>
+              <h3>問いと物差しを決める</h3>
+              <p>優先する問い、比較、重大なアウトカム、重要な差の目安、COIの扱いを決めます。</p>
+            </article>
+            <article class="info-card">
+              <p class="audience-label">レビュー後</p>
+              <h3>結果を同じ順番で読む</h3>
+              <p>基準となる人数、相対効果、人数差、結果の幅、重要な差、確実性を確認します。</p>
+            </article>
+            <article class="info-card">
+              <p class="audience-label">最終会議</p>
+              <h3>判断と文章を完成させる</h3>
+              <p>判断表を一項目ずつ確定し、方向、強さ、推奨文、注意書き、実装上の配慮を決めます。</p>
+            </article>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="ci" class="section">
+        <div class="section-head">
+          <p class="eyebrow">最初に変える読み方</p>
+          <h2>「あり・なし」だけで決めない</h2>
+          <p>
+            研究結果を読むとき、つい「有意差がある」「有意差がない」という二択で考えたくなります。
+            しかし、診療ガイドラインの投票では、二択だけでは不十分です。
+            どのくらい良さそうか、どのくらい悪く見える可能性があるか、その幅を見て判断します。
+          </p>
+        </div>
+
+        <div class="concept-grid">
+          <article class="concept-card strong-card">
+            <h3>避けたい読み方</h3>
+            <p>「統計学的に差があるから採用」「差がはっきりしないから効果なし」</p>
+            <p class="muted">
+              P値という数字で、この二択を判断している資料もあります。ただし、P値は効果の大きさや患者にとっての重要性を直接示すものではありません。
+            </p>
+          </article>
+          <article class="concept-card">
+            <h3>推奨判断に使う読み方</h3>
+            <p>「最もありそうな効果はどれくらいか。小さく見積もるとどこまで小さいか。悪い側に振れると害まであり得るか」</p>
+            <p class="muted">
+              この幅を示す数字を、信頼区間と呼びます。名前は難しいですが、「結果のゆれ幅」と考えると読みやすくなります。
+            </p>
+          </article>
+        </div>
+
+        <div class="callout soft">
+          <strong>信頼区間で表しているのは、効果推定値の不確実性です。</strong>
+          「患者100人のうち95人の結果が、この範囲に入る」という意味ではありません。
+          また、相対効果の数字だけを見て上限・下限を良い側・悪い側と決めず、アウトカムの向きを確認し、標準治療との差を絶対人数へ直して読みます。
+        </div>
+
+        <div class="example-panel">
+          <h3>幅を人数に直す例</h3>
+          <p>
+            望ましくないアウトカムで、標準治療では1000人中100人に起きるとします。
+            新治療の最もありそうな読みでは1000人中80人、結果の幅は1000人中60人から105人までだとします。
+          </p>
+          <table class="mini-table">
+            <thead>
+              <tr>
+                <th>読み取る値</th>
+                <th>人数に直す</th>
+                <th>意味</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>最もありそうな値</td>
+                <td>1000人中80人</td>
+                <td>標準治療より20人少ない</td>
+              </tr>
+              <tr>
+                <td>良い側の端</td>
+                <td>1000人中60人</td>
+                <td>標準治療より40人少ない可能性がある</td>
+              </tr>
+              <tr>
+                <td>悪い側の端</td>
+                <td>1000人中105人</td>
+                <td>標準治療より5人多い可能性もある</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            つまり、「最もありそうなのは1000人中20人の減少。ただし、あり得る範囲は40人減少から5人増加まで」と読みます。
+            ここまで読んでから、患者にとって十分大きい差か、害の可能性をどう扱うかを議論します。
+          </p>
+        </div>
+
+        <div class="reading-steps">
+          <h3>幅を読む手順</h3>
+          <ol>
+            <li>アウトカムの向きを確認します。死亡や入院は少ないほど良く、回復や生活の質の改善は多いほど良い結果です。この方向を逆に考えて、最後に気が付くということも多いので注意しましょう。</li>
+            <li>最もありそうな値を、人数に翻訳します。</li>
+            <li>幅の両端を、楽観的な場合と慎重に見た場合として人数に翻訳します。</li>
+            <li>その幅が「差なし」や「患者にとって重要な差」をまたぐかを確認します。</li>
+            <li>幅が広い場合は、「効果はありそうだが不確実」「害の可能性も含む」など、投票理由に入れます。</li>
+          </ol>
+        </div>
+        <aside class="mentor-note illustration-only">
+          <img src="assets/mentor/mentor-guide.jpg" alt="案内役が考え方の転換を促しているイラスト">
+        </aside>
+      </section>
+
+      <section id="pico" class="section two-col">
+        <div>
+          <p class="eyebrow">Step 1</p>
+          <h2>誰に、何を、何と比べるかを確かめる</h2>
+          <p>
+            推奨は「何をすべきか」に答える文です。会議資料では、この問いをCQ、問いの中身をPICOと呼ぶことがあります。
+            名前は難しく見えますが、意味はシンプルです。「誰に」「何を」「何と比べて」「何を良い結果と考えるか」をそろえるためのメモです。
+            ここがずれると、後の要約表や判断表が正しくても、投票対象がぼやけます。
+          </p>
+        </div>
+        <div class="check-panel">
+          <h3>問いの確認メモ</h3>
+          <dl class="pico-list">
+            <div><dt>P</dt><dd>誰に対する推奨か。重症度、年齢、背景疾患、治療歴は合っているか。</dd></div>
+            <div><dt>I</dt><dd>何を行うのか。薬剤、検査、手術、ケア、実施時期まで明確か。</dd></div>
+            <div><dt>C</dt><dd>何と比べるのか。標準治療、無治療、別の選択肢のどれか。</dd></div>
+            <div><dt>O</dt><dd>患者に重要な結果か。死亡、症状、生活の質、重い有害事象、負担を見落としていないか。</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section id="sof" class="section">
+        <div class="section-head">
+          <p class="eyebrow">Step 2</p>
+          <h2>研究結果の要約表を読む</h2>
+          <p>
+            会議資料では、この表をSoF表と呼ぶことがあります。これは「Summary of Findings」の略で、研究結果を投票用に短くまとめた表です。
+            ここでは「効果があるか、ないか」を探すのではなく、
+            対照群と介入群の差が、患者にとってどのくらい大きく、どのくらい確かかを読みます。
+          </p>
+        </div>
+        <figure class="figure-panel">
+          <img src="assets/image2/sof-reader.svg" alt="結果の要約表で確認する列と注意点を示す図">
+          <figcaption>
+            図2：結果の要約表では、アウトカムごとに効果の方向、大きさ、結果の幅、確実性、脚注をセットで読みます。
+          </figcaption>
+        </figure>
+        <div class="reading-steps">
+          <h3>SoF表だけでなく元論文まで確認した場合</h3>
+          <p>
+            医療関係者の中には、システマティックレビューで採用された元論文まで読んで会議に臨んでくださる方がいます。
+            これはパネル全体にとって大変ありがたい準備です。
+          </p>
+          <p>
+            ただし、元論文で見つけた問題点は、今回のエビデンスの確実性や効果推定にどの程度影響するかを分けて扱います。
+            確実性を大きく変える指摘なら修正が必要ですが、重要な気づきであっても全体の判断への影響が小さい場合は、その論点だけに議論が集中しすぎないよう注意します。
+          </p>
+          <p>
+            特に、採用論文が1〜2本と少ないときに「この論文は除外すべきではないか」という議論になると、エビデンスなしとして議論が止まることがあります。
+            可能な限り、会議前に事務局や方法担当者へ共有し、当日は「全体の推奨判断に影響するか」を確認しながら扱いましょう。
+          </p>
+        </div>
+      </section>
+
+      <section id="absolute-effect" class="section band">
+        <div class="section-head">
+          <p class="eyebrow">要約表の最重要ポイント</p>
+          <h2>「1000人中4人少ない」の正しい読み方</h2>
+          <p>
+            要約表の「1000人あたり4人少ない」は、「1000人中4人だけが成功する」という意味ではありません。
+            多くの場合、対照群、つまり標準治療や従来の治療を受けた場合と比べて、新しい介入によりアウトカムが4人分少ない、または多いという意味です。
+          </p>
+        </div>
+
+        <div class="concept-grid">
+          <article class="concept-card strong-card">
+            <h3>誤読しやすい読み方</h3>
+            <p>「新治療を受けると1000人中4人しか成功しない」</p>
+            <p class="muted">これは誤りです。要約表の人数差は、通常「比較した差」を表します。</p>
+          </article>
+          <article class="concept-card">
+            <h3>正しい読み方</h3>
+            <p>「標準治療では1000人中40人に入院が起きる。新治療では1000人中36人に入院が起きる。差は1000人中4人少ない」</p>
+            <p class="muted">つまり、新治療にすると標準治療に比べて入院が4人減る、という読み方です。</p>
+          </article>
+        </div>
+
+        <table class="mini-table evidence-table" aria-label="人数差の読み方の例">
+          <thead>
+            <tr>
+              <th>項目</th>
+              <th>人数での表現</th>
+              <th>読むときの意味</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>対照群</td>
+              <td>標準治療で1000人中40人が入院</td>
+              <td>比較の土台です。現在の標準的な治療、従来治療、無治療、別介入などが入ります。</td>
+            </tr>
+            <tr>
+              <td>介入群</td>
+              <td>新治療で1000人中36人が入院</td>
+              <td>新しい治療や検査を行った場合に予測される人数です。</td>
+            </tr>
+            <tr>
+              <td>差</td>
+              <td>1000人中4人少ない</td>
+              <td>標準治療に比べ、新治療で入院が4人減るという意味です。成功者が4人という意味ではありません。</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="callout">
+          <strong>言い換えの練習：</strong>
+          「1000人あたり4人少ない」と見たら、必ず「何と比べて」を補います。
+          例：「標準治療と比べて、新治療では1000人あたり入院が4人少ない可能性があります」。
+        </div>
+
+        <div class="section-head narrow-head">
+          <h3>同じ相対効果でも、人数差は変わる</h3>
+          <p>
+            相対危険度が同じでも、もともとのリスクが低い集団と高い集団では、1000人あたりの人数差が変わります。
+            そのため、要約表では相対効果だけでなく、想定された対照群リスクが自分たちの対象者に近いかを確認します。
+          </p>
+        </div>
+        <table class="mini-table evidence-table" aria-label="ベースラインリスクと人数差の関係">
+          <thead>
+            <tr>
+              <th>標準治療での入院</th>
+              <th>相対危険度</th>
+              <th>新治療での入院</th>
+              <th>人数差</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1000人中20人</td>
+              <td>RR 0.90</td>
+              <td>1000人中18人</td>
+              <td>1000人中2人少ない</td>
+            </tr>
+            <tr>
+              <td>1000人中200人</td>
+              <td>RR 0.90</td>
+              <td>1000人中180人</td>
+              <td>1000人中20人少ない</td>
+            </tr>
+          </tbody>
+        </table>
+        <aside class="mentor-note">
+          <img src="assets/mentor/mentor-clipboard.jpg" alt="案内役が研究結果の要約表を示しているイラスト">
+          <p>
+            「何と比べて、1000人中何人変わるか」が、臨床の判断に重要ですが、時々は、「そもそも、その治療の改善率は？」も考えましょう。また、対照としている治療（現在の標準治療など）が明確ならば比較しやすいですが、対照と介入のどちらの治療が良いか学会でも議論がある場合は、効果の大きさが小さかったり確実性が低かったりすると、判断が困難になります。
+          </p>
+        </aside>
+      </section>
+
+      <section id="mid" class="section">
+        <div class="section-head">
+          <p class="eyebrow">重要性の判断</p>
+          <h2>どのくらいの差なら重要かを決める</h2>
+          <p>
+            会議資料では、患者にとって意味がある最小の差をMIDと呼ぶことがあります。
+            難しく見えますが、「このくらい変われば、患者にとって大事と言えそうだ」という目安です。
+            いくら統計学的に有意差があっても、患者にとっての意思決定に小さすぎる値ならば、推奨の根拠としては弱いかもしれません。
+            一方で、この目安がいつも存在するとは限りません。存在しない場合は、パネルが事前に判断の閾値を明示して議論します。
+          </p>
+        </div>
+
+        <table class="mini-table evidence-table" aria-label="大事な差の目安と結果の幅による判断パターン">
+          <thead>
+            <tr>
+              <th>結果の見え方</th>
+              <th>読み方</th>
+              <th>投票時の扱い</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>点推定値がMIDを超え、信頼区間全体も重要な差を上回る</td>
+              <td>重要な利益または害が起きる可能性が高い</td>
+              <td>推奨の方向を支える強い材料になる</td>
+            </tr>
+            <tr>
+              <td>点推定値はMIDを超えるが、信頼区間がMIDをまたぐ</td>
+              <td>重要かもしれないが、不確実性が大きい</td>
+              <td>条件付き推奨、追加説明、または慎重な文言を検討する</td>
+            </tr>
+            <tr>
+              <td>信頼区間全体がMID未満</td>
+              <td>差はあっても、患者にとって重要ではない可能性が高い</td>
+              <td>他の利益・害・負担がなければ推奨を強めにくい</td>
+            </tr>
+            <tr>
+              <td>重要な利益と重要な害の両方を含む</td>
+              <td>推定が不精確で、判断が大きく変わり得る</td>
+              <td>強い推奨は難しく、会議で追加確認が必要になる</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="example-panel">
+          <h3>例：生活の質を点数で見る場合</h3>
+          <p>
+            新治療の点推定値が4点改善、95%信頼区間が1点改善から7点改善なら、最もありそうな効果はMIDに届いていません。
+            ただし、信頼区間の上限はMIDを超えるため、重要な改善の可能性を完全には否定できません。
+            この場合は「QOLを改善するかもしれないが、患者にとって十分重要な改善かは不確実」と読みます。
+          </p>
+        </div>
+      </section>
+
+      <section id="forest-plot" class="section band">
+        <div class="section-head">
+          <p class="eyebrow">研究資料の読み方</p>
+          <h2>研究ごとの結果をまとめた図（フォレストプロット）がある場合は</h2>
+        </div>
+        <div class="forest-wrap" aria-label="簡略化したフォレストプロット">
+          <div class="forest-axis">
+            <span>比較が有利</span>
+            <span>差なし</span>
+            <span>介入が有利</span>
+          </div>
+          <div class="clinical-threshold" aria-hidden="true">
+            <span>臨床的な閾値</span>
+          </div>
+          <div class="forest-row">
+            <span>研究A</span><i style="--left: 58%; --width: 18%"></i>
+          </div>
+          <div class="forest-row">
+            <span>研究B</span><i style="--left: 48%; --width: 26%"></i>
+          </div>
+          <div class="forest-row">
+            <span>統合結果</span><i class="pooled" style="--left: 55%; --width: 14%"></i>
+          </div>
+        </div>
+        <div class="route-grid">
+          <article class="info-card">
+            <h3>最もありそうな値</h3>
+            <p>最もありそうな効果です。どちらに傾いているかを見ます。</p>
+          </article>
+          <article class="info-card">
+            <h3>結果の幅</h3>
+            <p>効果のあり得る範囲です。差なしの線や重要な閾値をまたぐか確認します。</p>
+          </article>
+          <article class="info-card">
+            <h3>研究ごとの違い</h3>
+            <p>研究ごとの結果が大きく違う場合、なぜ違うのか、患者集団が違うのかを質問します。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="etd" class="section">
+        <div class="section-head">
+          <p class="eyebrow">Step 3</p>
+          <h2>判断表で、利益・害・価値観をつなぐ</h2>
+          <p>
+            会議資料では、この判断表をEtDと呼ぶことがあります。これは「Evidence to Decision」の略で、
+            研究結果を推奨に変えるときの理由を見える化する表です。要約表で効果を読み、判断表で価値観、資源、公平性、受け入れやすさ、実行可能性を加えて、
+            推奨の方向と強さを決めます。
+          </p>
+        </div>
+        <figure class="figure-panel">
+          <img src="assets/image2/etd-reader.svg" alt="判断表の主要項目とパネリストの確認点を示す図">
+          <figcaption>
+            図3：臨床推奨では、利益・害・負担、エビデンスの確実性、価値観と意向が中心になります。資源、費用対効果、公平性、受け入れやすさ、実行可能性も、採用した視点と判断表に従って検討します。後者が重要でないという意味ではなく、個人、集団、制度のどの視点で判断するかによって重みが変わります。
+          </figcaption>
+        </figure>
+        <div class="etd-grid">
+          <article>
+            <h3>問題は重要か</h3>
+            <p>患者や社会にとって放置できない問題か。疾患負担、現在の困りごと、診療のばらつきを確認します。</p>
+          </article>
+          <article>
+            <h3>望ましい効果</h3>
+            <p>死亡、合併症、症状、生活の質などの改善がどれくらいか。患者に意味のある大きさかを見ます。</p>
+          </article>
+        </div>
+        <div class="reading-steps">
+          <h3>価値観の欄は、平均だけで閉じない</h3>
+          <p>
+            価値観や意向は、アンケートの平均点だけで決まるものではありません。調査、インタビュー、質的研究、意思決定支援資料から得られた情報を優先し、
+            「多くの人が同じ方向を望みそうか」「意見が分かれそうか」「どんな理由で分かれるのか」を整理します。
+            パネルの経験は見落としを探す手掛かりになりますが、対象となる人々の価値観を調べた研究の代わりにはなりません。研究が乏しくパネルが推測した場合は、そのことと不確実性を明記します。
+          </p>
+          <ol>
+            <li>数値情報がある場合は、平均だけでなく、ばらつきや反対方向の意見も確認する。</li>
+            <li>言葉の情報がある場合は、仕事、家族、通院、費用、不安、治療への抵抗感など、選択を左右する理由を拾う。</li>
+            <li>情報が少ない場合は、「情報がない」ではなく「パネルではどのように推定したか」と「どこが不確実か」を記録する。</li>
+            <li>意見が分かれるなら、条件付き推奨や注意書きで、読者が患者と一緒に考える余地を残す。</li>
+          </ol>
+        </div>
+        <div class="reading-steps">
+          <h3>同じ重大なアウトカムでも、推奨の判断に関与する重要度は異なる</h3>
+          <p>
+            例えば、「死亡」と「病気の再発」では、重要度は同じ重大となると思います。しかし、その病気が再発しても治療可能な場合、「死亡」と「病気の再発」は、臨床判断の重みが異なります。このような違いを「効用値」として示すこともありますし、なくても、どのアウトカムを最も推奨の判断に寄与するかを考えながら推奨文を作成しましょう。
+          </p>
+        </div>
+      </section>
+
+      <section id="recommendation" class="section two-col">
+        <div>
+          <p class="eyebrow">Step 4</p>
+          <h2>推奨文の方向と強さを読む</h2>
+          <p>
+            推奨は、方向「行う・行わない」と、強さ「強い・条件付き」の組み合わせです。
+            「標準治療だから」「患者が望むから」だけではなく、判断表の理由が文言に反映されているかを見ます。
+          </p>
+          <ul class="plain-list">
+            <li><strong>強い推奨：</strong>十分に情報を得たほぼ全員が、その選択を望むと考えられる。</li>
+            <li><strong>条件付き推奨：</strong>多くの人は望むが、望まない人も少なくない。これは弱い言い方ではなく、患者と一緒に考えて選ぶことを明確にする重要な推奨です。</li>
+          </ul>
+        </div>
+        <figure class="figure-panel compact">
+          <img src="assets/image2/vote-compass.svg" alt="推奨の方向と強さを4分類で示す図">
+          <figcaption>図4：投票では、この4象限のどこに置くのが妥当かを考えます。</figcaption>
+        </figure>
+      </section>
+
+      <section id="vote" class="section band">
+        <div class="section-head">
+          <p class="eyebrow">Step 5</p>
+          <h2>投票前の3分チェック</h2>
+          <p>
+            投票は「推奨草案に同意するか」だけではなく、「どこをどう直せば同意できるか」を示す機会でもあります。
+            以下をすべて確認してから投票します。
+          </p>
+        </div>
+        <div class="checklist" data-progress-list>
+          <label><input type="checkbox"> 対象者と比較が、自分が投票する推奨文と一致している</label>
+          <label><input type="checkbox"> 「1000人中何人少ない・多い」を、対照群との差として説明できる</label>
+          <label><input type="checkbox"> 重大アウトカムの利益と害を、人数差で説明できる</label>
+          <label><input type="checkbox"> 重大なアウトカムの中の、どのアウトカムを推奨の判断にしたか言える</label>
+          <label><input type="checkbox"> あり・なしではなく、最もありそうな値と結果の幅で判断した</label>
+          <label><input type="checkbox"> 確実性が低い理由を、少なくとも一つ言える</label>
+          <label><input type="checkbox"> 患者の価値観・負担・受け入れやすさに関する懸念を整理した</label>
+          <label><input type="checkbox"> 推奨の方向と強さが判断表の理由と合っているか確認した</label>
+          <label><input type="checkbox"> 賛成、修正提案、反対のいずれでも、理由を一文で言える</label>
+          <label><input type="checkbox"> その場で決まらない場合に、残す論点と次の確認方法を説明できる</label>
+        </div>
+        <p class="progress-note"><span data-progress-count>0</span>/10 項目完了</p>
+      </section>
+
+      <section id="practice" class="section">
+        <div class="section-head">
+          <p class="eyebrow">演習</p>
+          <h2>架空の問いで投票してみる</h2>
+          <p>
+            以下は練習用の架空例です。実際の医療判断ではなく、資料の読み方と投票理由の作り方を練習するためのものです。
+          </p>
+        </div>
+        <div class="practice-layout">
+          <article class="case-box">
+            <h3>架空の問い</h3>
+            <p>
+              成人の慢性疾患Xで、標準治療に加えて介入Aを行うべきか。比較は標準治療のみ。
+            </p>
+            <table class="mini-table">
+              <thead>
+                <tr>
+                  <th>アウトカム</th>
+                  <th>標準治療</th>
+                  <th>介入A</th>
+                  <th>差</th>
+                  <th>確実性</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>入院</td>
+                  <td>1000人中120人</td>
+                  <td>1000人中90人</td>
+                  <td>1000人あたり30人少ない</td>
+                  <td>低</td>
+                </tr>
+                <tr>
+                  <td>重い有害事象</td>
+                  <td>1000人中20人</td>
+                  <td>1000人中28人</td>
+                  <td>1000人あたり8人多い可能性</td>
+                  <td>低</td>
+                </tr>
+                <tr>
+                  <td>治療負担</td>
+                  <td>通常診療</td>
+                  <td>毎週通院が必要</td>
+                  <td>通院負担が増える</td>
+                  <td>記述的情報</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="muted">
+              判断表草案：望ましい効果は「小さいから中等度」、望ましくない効果は「小さい」、価値観は「ばらつきあり」。
+              入院を何人減らせば重要と考えるかの明確な目安はなく、パネルでは「1000人中10人以上の入院減少」を判断の目安として議論する予定。
+              推奨草案は「介入Aを条件付きで提案する」。
+            </p>
+          </article>
+          <form class="vote-form" data-vote-form>
+            <fieldset>
+              <legend>あなたならどう投票しますか</legend>
+              <label><input type="radio" name="vote" value="agree"> 草案に同意する</label>
+              <label><input type="radio" name="vote" value="revise"> 条件や文言の修正を提案して同意する</label>
+              <label><input type="radio" name="vote" value="oppose"> 草案に反対する</label>
+            </fieldset>
+            <label class="text-label" for="vote-reason">理由を一文で書く</label>
+            <textarea id="vote-reason" name="reason" rows="5" placeholder="例：入院減少は患者に重要だが、毎週通院の負担で望まない患者も多いので、条件付き推奨なら同意します。"></textarea>
+            <button class="button primary" type="submit">フィードバックを見る</button>
+            <output class="feedback" data-vote-feedback></output>
+          </form>
+        </div>
+      </section>
+
+      <section id="audience-paths" class="section band audience-paths">
+        <div class="section-head">
+          <p class="eyebrow">立場別の読み方</p>
+          <h2>自分の立場に近いページへ進む</h2>
+          <p>
+            ここまで読んだら、自分の立場に近いボタンを押して、別ページで会議前に特に確認したい視点を読み足してください。
+            役割を固定するためではなく、専門性、実施者の視点、一般の人の視点を重ねて、推奨の判断を偏りにくくするための補強です。
+          </p>
+        </div>
+        <div class="audience-buttons" aria-label="立場別の補強ページ">
+          <a class="audience-button specialist" href="specialist.html">
+            <span>専門医</span>
+            <strong>今回のCPG分野の専門の方</strong>
+            <em>元論文、Core GRADE、適用可能性を確認する</em>
+          </a>
+          <a class="audience-button clinician" href="clinician.html">
+            <span>医療関係者</span>
+            <strong>専門以外の医療関係者の方</strong>
+            <em>読者・実施者として確認する</em>
+          </a>
+          <a class="audience-button public" href="public.html">
+            <span>一般の方など</span>
+            <strong>市民・法律家など一般の方</strong>
+            <em>一般の人の視点で確認する</em>
+          </a>
+        </div>
+      </section>
+
+      <section class="section band sources">
+        <div class="section-head">
+          <p class="eyebrow">一次資料・公式手順</p>
+          <h2>資料の読み方と推奨判断の根拠</h2>
+          <p>数字や表の読み方は、掲載誌の印象ではなく、GRADEの効果推定、確実性、判断表、推奨作成の手順に沿って整理しています。</p>
+        </div>
+        <ul class="source-list source-list-tagged">
+          <li><span class="source-kind">GRADE原著</span><a href="https://www.bmj.com/content/389/bmj-2024-081904">Core GRADE 2: choosing the target of certainty rating and assessing imprecision</a></li>
+          <li><span class="source-kind">GRADE原著</span><a href="https://www.bmj.com/content/389/bmj-2024-083866">Core GRADE 6: summarizing the evidence and assessing certainty</a></li>
+          <li><span class="source-kind">GRADE原著</span><a href="https://www.bmj.com/content/389/bmj-2024-083867">Core GRADE 7: moving from evidence to recommendations and decisions</a></li>
+          <li><span class="source-kind">GRADE原著</span><a href="https://www.bmj.com/content/353/bmj.i2089">GRADE Evidence to Decision frameworks: clinical practice guidelines</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>表や数字を、患者にとっての意味と投票理由へ翻訳するための資料読解ページです。</p>
+      <a href="index.html#top">第一面へ戻る</a>
+    </footer>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
