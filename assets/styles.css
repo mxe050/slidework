@@ -3204,3 +3204,19 @@ textarea {
     padding: 14px 16px;
   }
 }
+
+
+/* Learning order refinements */
+.home-guide-overlap {
+  display: block;
+  margin-top: 6px;
+  color: var(--coral);
+  font-size: 0.86rem;
+  font-weight: 800;
+  line-height: 1.55;
+}
+
+.voice-card.chair-voice {
+  border-left-color: var(--violet);
+  background: #fbf9fe;
+}
